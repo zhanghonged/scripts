@@ -6,6 +6,7 @@
 # @Version : $Id$
 
 import peewee
+import datetime
 
 db=peewee.SqliteDatabase("bot.db")
 
@@ -16,8 +17,14 @@ class User(peewee.Model):
 	Qqtime=peewee.DateField()
 	Num=peewee.IntegerField()
 	Money=peewee.IntegerField()
+	Nca=peewee.IntegerField()
 
 	class Meta:
-		database = db
+		database = db   #这个User模型使用"bot.db"数据库
 if __name__ == '__main__':
-	User.create_table()
+	#User.create_table()
+	db.create_tables([User])
+	# a=User.get(qq='233571510')
+	# a.Qqtime=a.Qqtime-datetime.timedelta(days=1)
+	# print a.Qqtime
+	# a.save()

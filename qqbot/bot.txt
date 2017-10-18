@@ -1,0 +1,53 @@
+peewee是一款轻量级、丰富的ORM（Object Relation Mapping，对象关系映射），支持postgresql、mysql和sqlite，如SqliteDatabase（file or memory）、MYSQLDatabase、PostgresqlDatabase；
+下面主要介绍SqliteDatabase的简单用法
+
+
+模型定义
+  模型类，字段实例和模型实例对应数据库概念：
+     事物--------对应
+    模型类      数据库表
+    字段实例    数据库表的列
+    模型实例    数据库表的行
+
+
+创建数据库
+import peewee
+db=peewee.SqliteDatabase('xxx.db')
+
+class Person(peewee.Model):
+    name=CharField()
+    brithday=DateField()
+    is_relative=BooleanField()
+    class Meta:
+        database=db  #这个Person模型使用"xxx.db"数据库
+class Pet(Model):
+    owner = ForeignKeyField(Person, related_name='pets')
+    name = CharField()
+    animal_type = CharField()
+    class Meta.:
+        database = db  #这个Pet模型使用"people.db"数据库
+#数据库内创建表来存储数据：这会创建表包含适当的列，索引，序列和外键限制：
+db.create_tables([Person, Pet]
+
+存储数据
+填充数据库，我们将会使用save()和create()方法来添加和更新表的记录
+from datatime import date
+uncle_bob=Person(name='Bob',birthday=date(1960,1,15),is_relative=True)
+uncle_bob.save() #bob被存储到数据库中
+
+herb=Person.create(name='Herb',birthday=date(1950,5,15),is_relative=True0)
+
+更新数据库
+herb.name='Herb.L'
+herb.save()
+
+删除数据库行：delete_instance()
+herb.delete_instance()
+
+
+数据检索
+  获取单条记录：
+herb=Person.select().where(Person.name == 'Bob').get()
+  等效简写
+herb=Person.get(Person.name=='Bob')
+
