@@ -51,3 +51,8 @@ herb=Person.select().where(Person.name == 'Bob').get()
   等效简写
 herb=Person.get(Person.name=='Bob')
 
+  查询所有记录：
+  result=Person.select()
+  for i in result:
+    print i.name,i.birthday
+
