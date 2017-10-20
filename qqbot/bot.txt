@@ -65,6 +65,7 @@ T.delete_instance()
 
 #改
 T=Teacher.update(age=100).where(Teacher.name=='wangwu')
+T.execute()
 或
 T=Teacher().get(name='wangwu')
 T.age=101
