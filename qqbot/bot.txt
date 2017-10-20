@@ -1,4 +1,4 @@
-peewee是一款轻量级、丰富的ORM（Object Relation Mapping，对象关系映射），支持postgresql、mysql和sqlite，如SqliteDatabase（file or memory）、MYSQLDatabase、PostgresqlDatabase；
+peewee是一款轻量级、丰富的ORM（Object Relation Mapping，对象关系映射），支持postgresql、mysql和sqlite，如SqliteDatabase（file or memory）、MySQLDatabase、PostgresqlDatabase；
 下面主要介绍SqliteDatabase的简单用法
 
 
@@ -12,47 +12,111 @@ peewee是一款轻量级、丰富的ORM（Object Relation Mapping，对象关系
 
 创建数据库
 import peewee
-db=peewee.SqliteDatabase('xxx.db')
+#sqllite
+connect=peewee.SqliteDatabase('xxx.db')
 
-class Person(peewee.Model):
-    name=CharField()
-    brithday=DateField()
-    is_relative=BooleanField()
+#mysql
+connect=peewee.MySQLDatabase(
+    database='xxx',
+    host='127.0.0.1',
+    passwd='root',
+    user='root',
+    port=3306
+)
+
+class Teacher(peewee.Model):
+    name=peewee.CharField(max_length=50) #varchar(50)
+    age=peewee.IntegerField()            #int
+    birthday=peewee.DateTimeField()      #时间格式
+	
     class Meta:
-        database=db  #这个Person模型使用"xxx.db"数据库
-class Pet(Model):
-    owner = ForeignKeyField(Person, related_name='pets')
-    name = CharField()
-    animal_type = CharField()
-    class Meta.:
-        database = db  #这个Pet模型使用"people.db"数据库
-#数据库内创建表来存储数据：这会创建表包含适当的列，索引，序列和外键限制：
-db.create_tables([Person, Pet]
+        database=connect #这个Teacher模型使用"xxx"数据库
 
-存储数据
-填充数据库，我们将会使用save()和create()方法来添加和更新表的记录
-from datatime import date
-uncle_bob=Person(name='Bob',birthday=date(1960,1,15),is_relative=True)
-uncle_bob.save() #bob被存储到数据库中
+#创建表		
+数据库内创建表来存储数据：这会创建表包含适当的列，索引，序列和外键限制：
+Teacher.create_table()
+或
+connect.create_table(Teacher)
+或
+connect.create_tables([Teacher] #可同时创建多个
 
-herb=Person.create(name='Herb',birthday=date(1950,5,15),is_relative=True0)
+#增
+填充数据库，我们将会使用save()、execute()或create()方法来添加和更新表的记录
+T=Teacher()
+T.name='zhangsan'
+T.age=20
+T.birthday=datetime.datetime.now()
+T.save()
+或
+T=Teacher(name='lisi',age='40',birthday=datetime.datetime.now())
+T.save()
+或
+T=Teacher().insert(name='wangwu',age=80,birthday=datetime.datetime.now())
+T.execute()
+或
+T=Teacher.create(name='maliu',age=32,birthday=datetime.datetime.now())
 
-更新数据库
-herb.name='Herb.L'
-herb.save()
+#删
+T=Teacher.delete().where(Teacher.name=='zhangsan')
+T.execute()
+或
+T=Teacher.get(name='lisi')
+T.delete_instance()
 
-删除数据库行：delete_instance()
-herb.delete_instance()
+#改
+T=Teacher.update(age=100).where(Teacher.name=='wangwu')
+或
+T=Teacher().get(name='wangwu')
+T.age=101
+T.save()
 
+#查
+#查询所有记录
+T_list=Teacher.select()
+for T in T_list:
+	print T.name,T.age,T.birthday
+#查多条
+T_list=Teacher.select().where(Teacher.age==20)
+for T in T_list:
+	print T.name,T.age,T.birthday
+#查单条
+T_list=Teacher.select().where(Teacher.name=='wangwu')  #返回是list
+for T in T_list:
+	print T.name,T.age,T.birthday
+或
+T=Teacher.select().where(Teacher.name=='zhangsan').get() #返回时单个
+print T.name,T.age,T.birthday
+或
+T=Teacher.get(Teacher.name=='zhangsan')
+print T.name, T.age, T.birthday
 
-数据检索
-  获取单条记录：
-herb=Person.select().where(Person.name == 'Bob').get()
-  等效简写
-herb=Person.get(Person.name=='Bob')
+#sql语句查询
+sql = "select * from teacher where name = 'zhangsan' and age = 20"
+T_list=Teacher.raw(sql)
+for T in T_list:
+	print T.name,T.age,T.birthday
 
-  查询所有记录：
-  result=Person.select()
-  for i in result:
-    print i.name,i.birthday
-
+下面看看MySQLdb直接操作数据库的介绍
+'''
+import MySQLdb
+#创建连接
+connect = MySQLdb.connect('127.0.0.1','root','666666','peewee')
+	#数据库地址
+	#数据库用户名
+	#数据库密码
+	#数据库名
+#创建操作游标
+cursor = connect.cursor()
+	#是一个内存，里面存放Python给mysql的命令和返回结果
+#执行sql
+sql = "select user,password,host from mysql.user;" #查询授权用户
+cursor.execute(sql)
+data = cursor.fetchall() #查询所有
+print data
+#关闭游标
+cursor.close()
+#提交修改
+connect.commit()
+#关闭连接
+connect.close()
+'''
