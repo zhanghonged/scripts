@@ -8,6 +8,7 @@ from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
 
 ##发件相关设置
+issendmail=False
 mail_from = '233571510@qq.com'
 mail_passwd='gbiukcxoumkwbgca'
 mail_smtp='smtp.qq.com'
@@ -15,7 +16,28 @@ mail_smtp_port=465
 mail_to = ['zhanghong@16feng.com','shemq@16feng.com']
 
 ##需要备份的版本库
-repos=['fx','Abc','test']
+repos=['fx']
+
+#发送邮件
+def sendmail(title,mail_body):
+    msg=MIMEMultipart()
+    body = MIMEText(mail_body, 'plain', 'utf-8')
+    msg.attach(body)
+    msg['Subject'] = title
+    msg['from'] = mail_from
+    msg['to'] = ','.join(mail_to)
+    try:
+        server = smtplib.SMTP_SSL(mail_smtp, mail_smtp_port)
+        server.login(mail_from, mail_passwd)
+        server.sendmail(mail_from, mail_to, msg.as_string())
+        server.quit()
+        print '邮件发送成功'
+    except smtplib.SMTPException as e:
+        print e
+        print '邮件发送失败'
+
+
+
 
 #装饰器作用：1、记录备份后的版本号。2、备份后写log。3、备份后发送邮件提醒。
 def decorator(svn_reporoot,svn_bakroot):
@@ -51,22 +73,8 @@ def decorator(svn_reporoot,svn_bakroot):
                 print '%s版本库备份失败!'
                 title = 'svn版本库%s备份失败' % (repo)
                 mail_body = 'Svn版本库%s备份失败：\n版本库：%s\n时间：%s\n版本号：[%s]_[%s]\n失败原因：%s' % (repo,repo,datetime.datetime.now(),result['StartNum'],result['CurrentNum'],result['result'])
-
-            msg=MIMEMultipart()
-            body=MIMEText(mail_body,'plain','utf-8')
-            msg.attach(body)
-            msg['Subject']=title
-            msg['from']=mail_from
-            msg['to']=','.join(mail_to)
-            try:
-                server=smtplib.SMTP_SSL(mail_smtp,mail_smtp_port)
-                server.login(mail_from,mail_passwd)
-                server.sendmail(mail_from,mail_to,msg.as_string())
-                server.quit()
-                print '邮件发送成功'
-            except smtplib.SMTPException as e:
-                print e
-                print '邮件发送失败'
+            if issendmail == True:
+                sendmail(title,mail_body)
         return wrapper
     return revision
 
