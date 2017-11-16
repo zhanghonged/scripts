@@ -28,10 +28,9 @@ def movdecry(passwd):
     if p_list[-1] == '+':
         p_list[num] = template[template.index(p_list[num].swapcase()) - 20]
     elif p_list[-1] == '-':
-        p_list[num] = template[template.index(p_list[num].swapcase()) - 20]
+        p_list[num] = template[template.index(p_list[num].swapcase()) + 20]
     p_list.pop()
     return ''.join(p_list)
-
 
 
 ##md5加密
