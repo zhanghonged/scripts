@@ -10,7 +10,7 @@ from email.mime.multipart import MIMEMultipart
 ##发件相关设置
 issendmail=False
 mail_from = '233571510@qq.com'
-mail_passwd='gbiukcxoumkwbgca'
+mail_passwd='xxxxxxxxxx'
 mail_smtp='smtp.qq.com'
 mail_smtp_port=465
 mail_to = ['zhanghong@16feng.com','shemq@16feng.com']
