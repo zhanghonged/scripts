@@ -1,72 +1,48 @@
 #coding:utf-8
 
 import os
-import time
 import socket
-import hashlib
-from model import User
 
-
-
-class Userdo(object):
-    def __init__(self):
-        pass
-
-    def encry(self,password):
-        serc=hashlib.md5('加密')
-        serc.update(password)
-        return serc.hexdigest()
+class Socketclient(object):
+    def __init__(self,host,port):
+        self.host = host
+        self.port = port
+        self.sock = socket.socket(socket.AF_INET,socket.SOCK_STREAM)
+        self.sock.connect((self.host,self.port))
 
     def register(self):
-        self.username = raw_input('Enter username:')
-        try:
-            user = User.get(User.username == self.username)
-        except:
-            user = User()
-            self.password = raw_input('Enter password:')
+        self.username = raw_input('输入用户名:')
+        data = ' '.join(['register',self.username])
+        self.sock.send(data)
+        rdata = self.sock.recv(512)
+        if rdata == 'exists':
+            print '用户名已存在.'
+            return False
+        elif rdata == 'ok':
+            self.password = raw_input('输入密码:')
             if self.password.isalnum() and len(self.password) >= 6:
-                self.password2 = raw_input('Enter password again:')
+                self.password2 = raw_input('再次输入密码:')
                 if self.password == self.password2:
-                    user.username = self.username
-                    user.password = self.encry(self.password)
-                    user.register_time = time.strftime('%Y-%m-%d %H:%M:%S')
-                    user.save()
-                    print 'sign successfully.'
+                    self.sock.send(self.password)
+                    self.sock.recv(512)
+                    print '注册成功,请进行登录操作.'
                     return True
-                else:
-                    print 'The two passwords don\'t same!'
-            else:
-                print 'Must include Numbers and letters, and length is greater than 6!'
-        else:
-            print 'username already exists!'
 
     def login(self):
         self.username = raw_input('username:')
-        try:
-            user = User.get(User.username == self.username)
-        except:
-            print 'username does not exist!'
+        data = ' '.join(['login',self.username])
+        self.sock.send(data)
+        rdata = self.sock.recv(512)
+        if rdata == 'exists':
+            self.password = raw_input('输入密码:')
+            self.sock.send(self.password)
+            result = self.sock.recv(512)
+            if result == 'success':
+                print '登录成功.'
+                return self.username
         else:
-            self.password = self.encry(raw_input("password:"))
-            for i in range(2):
-                if self.password == user.password:
-                    print 'login Success.'
-                    return self.username
-                else:
-                    self.password = self.encry(raw_input('password error, please re-enter:'))
-                    if self.password == user.password:
-                        print 'login Success.'
-                        return self.username
-            else:
-                print 'More than three times. Please Just a moment.'
-
-class Socketclient(object):
-    def __init__(self,host,port,user):
-        self.host = host
-        self.port = port
-        self.user = user
-        self.sock = socket.socket(socket.AF_INET,socket.SOCK_STREAM)
-        self.sock.connect((self.host,self.port))
+            print '用户名不存在！'
+            return False
 
     def sendhead(self,head):
         self.sock.send(head)
@@ -96,7 +72,8 @@ class Socketclient(object):
                 f.write(rdata)
         print 'receive %s done...' % self.file_name
 
-    def start(self):
+    def start(self,username):
+        self.user = username
         while True:
             command = raw_input("'put file' or 'get file' or 'quit':")
             if command == 'quit':
@@ -130,19 +107,18 @@ class Socketclient(object):
                         self.recvfile()
 
 if __name__ == '__main__':
+    client = Socketclient('localhost', 10021)
     u = raw_input('请选择: 1(注册),2(登陆):')
-    s = Userdo()
     if u == '1':
-        if s.register():
-            print '开始登陆...'
-            user = s.login()
-            if user:
-                client = Socketclient('123.57.65.23', 10241, user)
-                client.start()
+        s = client.register()
+        if s:
+            t = client.login()
+            if t:
+                client.start(t)
     elif u == '2':
-        user = s.login()
-        if user:
-            client = Socketclient('123.57.65.23',10241,user)
-            client.start()
+        t = client.login()
+        if t:
+            print t
+            client.start(t)
     else:
-        print '输入错误'
+        print '输入错误！'
