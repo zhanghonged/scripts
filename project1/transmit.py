@@ -63,17 +63,17 @@ class MyHandel(SocketServer.BaseRequestHandler):
                     self.file_name = self.buf.split()[1]
                     self.file_size = int(self.buf.split()[2])
                     self.user = self.buf.split()[3]
-                    self.file_path = os.sep.join([os.path.dirname(__file__).decode('gbk'),self.file_name])
+                    # 如果在linux环境 下面修改为os.path.dirname(__file__).decode('utf-8')
+                    self.file_path = os.sep.join([os.path.dirname(__file__).decode('gbk'),self.file_name.decode('utf-8')])
                     self.recevfile()
 
                 elif self.file_action == 'get':
-                    self.file_path = self.buf.split()[1]
+                    self.file_path = self.buf.split()[1].decode('utf-8')
                     self.user = self.buf.split()[2]
                     self.file_name = os.path.basename(self.file_path)
 
                     if os.path.isfile(self.file_path):
                         self.file_size = os.path.getsize(self.file_path)
-                        # print 'file_size:',self.file_size
                         if self.sendhead(str(self.file_size)) == 'begin':
                             self.sendfile()
                     else:

@@ -6,6 +6,8 @@ import socket
 import hashlib
 from model import User
 
+
+
 class Userdo(object):
     def __init__(self):
         pass
@@ -103,12 +105,16 @@ class Socketclient(object):
                 continue
             else:
                 self.file_action, self.file_path = command.split()
+                # 将file_path解码为unicode
+                self.file_path = self.file_path.decode('utf-8')
                 if self.file_action == 'put':
                     if os.path.isfile(self.file_path):
                         self.file_name = os.path.basename(self.file_path)
                         self.file_size = os.path.getsize(self.file_path)
-                        self.fhead = ' '.join([self.file_action, self.file_name, str(self.file_size), self.user])
-                        if self.sendhead(self.fhead) == self.file_name:
+                        # 由于socket不能传送unicode编码,因此编码成utf-8,使变成str格式
+                        self.fhead = ' '.join([self.file_action, self.file_name, str(self.file_size), self.user]).encode('utf-8')
+                        # 把file_name 从unicode编码为utf-8 进行比较操作
+                        if self.sendhead(self.fhead) == self.file_name.encode('utf-8'):
                             self.sendfile()
                     else:
                         print '文件不存在,请重新操作.'
@@ -131,12 +137,12 @@ if __name__ == '__main__':
             print '开始登陆...'
             user = s.login()
             if user:
-                client = Socketclient('127.0.0.1', 10021, user)
+                client = Socketclient('123.57.65.23', 10241, user)
                 client.start()
     elif u == '2':
         user = s.login()
         if user:
-            client = Socketclient('127.0.0.1',10021,user)
+            client = Socketclient('123.57.65.23',10241,user)
             client.start()
     else:
         print '输入错误'
