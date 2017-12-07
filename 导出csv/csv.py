@@ -5,9 +5,11 @@
 # @Link    : http://blog.codecp.org/
 # @Version : $Id$
 
-import requests,csv
-from bs4 import BeautifulSoup
 from urlparse import urljoin
+
+import csv
+import requests
+from bs4 import BeautifulSoup
 
 URL='http://xa.ganji.com/fang1/o{page}'
 ADDR='http://xa.ganji.com'
@@ -20,7 +22,7 @@ def do(x):
 	return x.string.encode("gbk").strip()
 
 with open('god.csv',"wb") as f:
-	csv_writer=csv.writer(f,delimiter=',')
+	csv_writer= csv.writer(f, delimiter=',')
 	print "start..."
 	while start_page < end_page:
 		start_page+=1
