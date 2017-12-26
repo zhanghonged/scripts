@@ -1,8 +1,6 @@
-
-
 ## 系统包括以下模块
 
-!()[./module.jpg]
+!()[https://github.com/zhanghonged/scripts/blob/master/planwar/images/modul.jpg]
 
 ### 背景图移动
 ### 键盘操作响应
@@ -26,7 +24,7 @@
 
 
 ### 背景图移动思路
-!()[./module.jpg]
+!()[https://github.com/zhanghonged/scripts/blob/master/planwar/images/mapmove.jpg]
 
 ### 键盘操作思路
 1、使用**window.document.onkeydown**监控键盘动作。
