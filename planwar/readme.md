@@ -18,24 +18,24 @@
 
 ## 各模块具体实现方法
 
-### 一、背景图移动思路
+### 一、背景图移动步骤
 ![image](https://github.com/zhanghonged/scripts/blob/master/planwar/images/mapmove.jpg)
 
-### 二、键盘操作思路
-`使用 **window.document.onkeydown** 监控键盘动作。`<br>
+### 二、键盘操作步骤
+`使用 window.document.onkeydown 监控键盘动作。`<br>
 1、方向键控制飞机上、下、左、右移动。<br>
 2、空格键发射子弹 (doFire方法)。
 
-### 子弹发射思路
-1、在主 <div> 内添加 <img> 标签，数量若干个，个数就是可以发射的子弹数。并设置默认样式：style="display:none;position:absolute"，默认不可见，具有绝对定位属性。
-2、获取飞机的当前位置 x = player.offsetLeft+52;  y = player.offsetTop; 其中52为飞机的宽度的一半。
-3、js里面循环通过id获取子弹对象eshot，对样式为style.display == "none"的eshot进行处理。
-4、子弹的left样式为第2步获取的当前飞机的的x。
-4、子弹的top样式为第2步获取的当前飞机的y。
-5、将此子弹对象的display属性设置为block，变成可见显示。
+### 三、子弹发射步骤
+1、在主 `div` 内添加 `img` 标签，数量若干个，个数就是可以发射的子弹数。并设置默认样式：`style="display:none;position:absolute"`，默认不可见，具有绝对定位属性。<br>
+2、获取飞机的当前位置 `x = player.offsetLeft+52;  y = player.offsetTop;`, 其中52为飞机的宽度的一半。<br>
+3、循环遍历所有子弹 `img` 标签，通过 `id`获取子弹对象，对 `display` 属性为 `none` 的子弹进行后续处理。<br>
+4、子弹的 `left` 属性为第2步获取的当前飞机的的 `x`。<br>
+4、子弹的 `top` 属性为第2步获取的当前飞机的 `y`。<br>
+5、将此子弹对象的 `display` 属性设置为 `block`，变成可见显示。
 
-### 敌机循环随机出现实路
-1、在主 <div> 内添加 <img> 标签，数量若干个，个数就是敌机的数量。并设置默认样式：style="position:absolute;display:none"，默认不可见，具有绝对定位属性。
+### 四、敌机循环随机出现步骤
+1、在主 `div` 内添加 `img` 标签，数量若干个，个数就是敌机的数量。并设置默认样式：`style="position:absolute;display:none`，默认不可见，具有绝对定位属性。<br>
 2、如果添加6架敌机，就循环0-5之间的数字，每次出现0-5中的第几家敌机。通过 Math.ceil(Math.random()*10000)%6; 实现0-5间数字的循环。
 3、通过document.getElementById取出上一步骤循环得到的敌机。
 4、判断敌机的display属性，如果是"none"属性，则继续往下走，如果是"block"忽略。
