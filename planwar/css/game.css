@@ -1,0 +1,16 @@
+*{
+	margin:0px;
+	padding:0px;
+}
+#gamebg{
+	width:1200px;
+	height:910px;
+	background:url(../images/timg.jpg) no-repeat 0 -2344px;
+	position:absolute;
+	left:20%;
+}
+#myplan{
+	position:absolute;
+	top:830px;
+	left:500px;
+}

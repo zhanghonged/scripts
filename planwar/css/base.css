@@ -1,0 +1,26 @@
+*{
+	margin:0px;
+	padding:0px;
+}
+#home{
+	width:755px;
+	height:900px;
+	background:url(../img/img_bg_logo.jpg) no-repeat;
+	background-size:100%;
+	margin:0 auto;
+}
+#logo{
+	width:755px;
+	height:200px;
+	background:url(../img/LOGO.png) no-repeat;
+	background-size:100%;
+	position:relative;
+	top:30px;
+}
+#buttonstart{
+	width:240px;
+	height:120px;
+	background:url(../img/button_start.png) no-repeat;
+	background-size:100%;
+	margin:450px  auto;
+}
