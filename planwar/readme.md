@@ -1,17 +1,14 @@
 ## 系统包括以下模块
 
 ![image](https://github.com/zhanghonged/scripts/blob/master/planwar/images/modul.jpg)
-1、<b>背景图移动</b>
-<br>
+1、<b>背景图移动</b><br>
 2、<b>键盘操作响应</b>
 
 - <b>上下左右位置移动</b>
 - <b>空格键发送子弹</b>
 
-3、<b>敌机出现</b>
-<br>
-4、<b>敌机移动</b>
-<br>
+3、<b>敌机出现</b><br>
+4、<b>敌机移动</b><br>
 5、<b>子弹移动</b>
 
 - <b>碰撞检测</b>
@@ -25,7 +22,7 @@
 ![image](https://github.com/zhanghonged/scripts/blob/master/planwar/images/mapmove.jpg)
 
 ### 二、键盘操作思路
-<span style="text-shadow:2px 2px 6px #FF0000;">使用 **window.document.onkeydown** 监控键盘动作。</span>
+`使用 **window.document.onkeydown** 监控键盘动作。`<br>
 1、方向键控制飞机上、下、左、右移动。<br>
 2、空格键发射子弹 (doFire方法)。
 
