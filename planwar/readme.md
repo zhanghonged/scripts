@@ -19,21 +19,15 @@
 
 6、<b>爆炸效果移除</b>
 
+## 各模块具体实现方法
 
-
-
-
-
-
-### 背景图移动思路
+### 一、背景图移动思路
 ![image](https://github.com/zhanghonged/scripts/blob/master/planwar/images/mapmove.jpg)
 
-### 键盘操作思路
-1、使用**window.document.onkeydown**监控键盘动作。
-2、按键控制飞机上、下、左、右移动包括：
-
-    - 上、下、左、右 移动控制
-    - 按空格键发射子弹 (doFire方法)
+### 二、键盘操作思路
+<span style="text-shadow:2px 2px 6px #FF0000;">使用 **window.document.onkeydown** 监控键盘动作。</span>
+1、方向键控制飞机上、下、左、右移动。<br>
+2、空格键发射子弹 (doFire方法)。
 
 ### 子弹发射思路
 1、在主 <div> 内添加 <img> 标签，数量若干个，个数就是可以发射的子弹数。并设置默认样式：style="display:none;position:absolute"，默认不可见，具有绝对定位属性。
