@@ -2,13 +2,16 @@
 
 ![image](https://github.com/zhanghonged/scripts/blob/master/planwar/images/modul.jpg)
 1、<b>背景图移动</b>
+<br>
 2、<b>键盘操作响应</b>
 
 - <b>上下左右位置移动</b>
 - <b>空格键发送子弹</b>
 
 3、<b>敌机出现</b>
+<br>
 4、<b>敌机移动</b>
+<br>
 5、<b>子弹移动</b>
 
 - <b>碰撞检测</b>
