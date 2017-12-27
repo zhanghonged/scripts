@@ -75,11 +75,10 @@
 
 6、如果敌机和子弹位置相交，将相交的飞机和子弹都回收，`diskply`属性设置为`none`。<br>
 7、在发生碰撞的位置产生碰撞效果:<br>
-   a. 定义爆炸在`html`中的`img`标签元素。`var pp = document.createElement("img");`<br> 
-   b. 给此元素设置src属性。`pp.src="xxx";`<br>
-   c. 为此`img`标签添加绝对定位属性。 `pp.style.position="absolute";`<br>
-   d. 设置爆炸`img`的位置,就是敌机和子弹相交处的位置。为了爆炸显示在中间，分别减去爆炸效果图片的一半高度和宽度。<br>
-
+    a. 定义爆炸在`html`中的`img`标签元素。`var pp = document.createElement("img");`<br> 
+    b. 给此元素设置src属性。`pp.src="xxx";`<br>
+    c. 为此`img`标签添加绝对定位属性。 `pp.style.position="absolute";`<br>
+    d. 设置爆炸`img`的位置,就是敌机和子弹相交处的位置。为了爆炸显示在中间，分别减去爆炸效果图片的一半高度和宽度。<br>
 8、定义此次爆炸效果的`num`属性为`0`。`pp.num = 0;`<br>
 9、将这次爆炸添加到前面定义的爆炸数组里。`pplist.push(pp);`<br>
 10、让爆炸效果在页面里显示出来。 `game.appendChild(pp);`
