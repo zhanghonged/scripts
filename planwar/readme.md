@@ -59,31 +59,28 @@
 5、判断子弹的`offsetTop`属性是否小于`-20px`，如果小于`-20px`就是飞出地图了，将`display`属性设为`block`进行回收。
 
 ### 七、碰撞检测步骤
-`碰撞检测是针对子弹操作的，对某一个子弹进行碰撞检测`。
+`碰撞检测是针对子弹操作的，对某一个子弹进行碰撞检测`。<br>
 1、通过循环遍历所有敌机，使用`document.getElementById`获取敌机，主`div`里定义了多少敌机`img`标签就循环多少次。<br>
 3、通过检测`display`属性是否为`block`检测敌机是否可见，对可见的敌机进行后续操作。<br>
-4、获取敌机和子弹位置。
+4、获取敌机和子弹位置:<br>
+  敌机的x位置:`ex = offsetLeft`<br>
+  敌机的y位置:`ey = offsetTop`<br>
+  子弹的x位置:`sx = offsetLeft`<br>
+  子弹的y位置:`sy = offsetTop`<br>
 
-   - 敌机的x位置:`ex = offsetLeft`
-   - 敌机的y位置:`ey = offsetTop`
-   - 子弹的x位置:`sx = offsetLeft`
-   - 子弹的y位置:`sy = offsetTop`
-
-5、判断子弹和敌机位置是否相交。
-
-   1. `ey > sy` 敌机的`ey`大于子弹`sy`,飞机比子弹位置低。
-   2. `sx > ex` 子弹的`sx`大于飞机的`ex`，子弹的横向位置大于飞机的最左边横向位置。
-   3. `sx < ex+115` 子弹的`sx`小于飞机的`ex+115`，子弹的横向位置小于飞机最右边的位置，`115`是飞机的宽度。
+5、判断子弹和敌机位置是否相交，需满足已下3个条件：<br>
+   a. `ey > sy` 敌机的`ey`大于子弹`sy`,飞机比子弹位置低。<br>
+   b. `sx > ex` 子弹的`sx`大于飞机的`ex`，子弹的横向位置大于飞机的最左边横向位置。<br>
+   c. `sx < ex+115` 子弹的`sx`小于飞机的`ex+115`，子弹的横向位置小于飞机最右边的位置，`115`是飞机的宽度。<br>
 
 6、如果敌机和子弹位置相交，将相交的飞机和子弹都回收，`diskply`属性设置为`none`。<br>
-7、在发生碰撞的位置产生碰撞效果。
+7、在发生碰撞的位置产生碰撞效果:<br>
+   a. 定义爆炸在`html`中的`img`标签元素。`var pp = document.createElement("img");`<br> 
+   b. 给此元素设置src属性。`pp.src="xxx";`<br>
+   c. 为此`img`标签添加绝对定位属性。 `pp.style.position="absolute";`<br>
+   d. 设置爆炸`img`的位置,就是敌机和子弹相交处的位置。为了爆炸显示在中间，分别减去爆炸效果图片的一半高度和宽度。<br>
 
-   1. 定义爆炸在`html`中的`img`标签元素。`var pp = document.createElement("img");` 
-   2. 给此元素设置src属性。`pp.src="xxx";`
-   3. 为此`img`标签添加绝对定位属性。 `pp.style.position="absolute";`
-   4. 设置爆炸`img`的位置,就是敌机和子弹相交处的位置。为了爆炸显示在中间，分别减去爆炸效果图片的一半高度和宽度。
-
-8、定义此次爆炸效果的`num`属性为`0`。`pp.num = 0;`
+8、定义此次爆炸效果的`num`属性为`0`。`pp.num = 0;`<br>
 9、将这次爆炸添加到前面定义的爆炸数组里。`pplist.push(pp);`<br>
 10、让爆炸效果在页面里显示出来。 `game.appendChild(pp);`
 
