@@ -1,0 +1,138 @@
+body{
+	font-family:-apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+}
+
+.logo{
+	width:40px;
+	margin-top:-10px;
+}
+.mycarousel{
+	margin:40px 0 0 0;
+}
+/*下面@media是控制轮播图里面文字的响应式*/
+/*大于1500px*/
+@media (min-width:1500px){
+	.mycarousel-text{
+		font-size:20px;
+	}
+	.mycarousel-h{
+		font-size:40px;
+	}
+	.mycarousel-text-top{
+		padding-bottom:150px;
+	}
+}
+/*小于1500px*/
+@media (max-width:1500px){
+	.mycarousel-text{
+		font-size:18px;
+	}
+	.mycarousel-h{
+		font-size:30px;
+	}
+	.mycarousel-text-top{
+		padding-bottom:90px;
+	}
+}
+/*小于1000px*/
+@media (max-width:1000px){
+	.mycarousel-text{
+		font-size:14px;
+	}
+	.mycarousel-h{
+		font-size:24px;
+	}
+	.mycarousel-text-top{
+		padding-bottom:20px;
+	}
+}
+/*小于600px*/
+@media (max-width:600px){
+	.mycarousel-text{
+		font-size:10px;
+	}
+	.mycarousel-h{
+		font-size:24px;
+	}
+	.mycarousel-text-top{
+		padding-bottom:0px;
+	}
+}
+/*特色区域*/
+.tese{
+	margin-top:10px;
+}
+.tese-auto{
+	margin-top:40px;
+}
+/*特色区域小字体*/
+.tese-font{
+	font-family:'Open Sans', helvetica, arial, sans-serif;
+	color:#aeaeae;
+}
+.test-text{
+	color:#1ab394;
+}
+
+/*图标调整*/
+.myicon{
+	color:#1ab394;
+}
+.myicon-top{
+	margin-top:60px;
+}
+/*团队*/
+.myteam{
+	background:#f4f4f4;
+	text-align:center;
+	margin-bottom:40px;
+}
+.myteam-f-color{
+	color:#aeaeae;
+}
+.myteam-number{
+	margin:auto;
+	text-align:center;
+}
+.myteam-number img{
+	width:88px;
+	height:88px;
+}
+.myteam-name{
+	color:#1ab394;
+}
+/*关于我们*/
+.about{
+	background:#2a2730;
+	color:#FFFFFF;
+	text-align:left;
+}
+.about-footer{
+	margin-top:20px;
+	margin-bottom:20px;
+}
+.about-footer li{
+	display:inline-block;
+	margin-right:20px;
+}
+.about-footer li a{
+	font-size:16px;
+	color:#fff;
+}
+.about-buttom{
+	margin-bottom:20px;
+}
+.about-code{
+	margin-left:24px;
+}
+.about-copyright{
+	text-align:center;
+}
+@media (max-width:480px){
+	.about{
+		font-size:10px;
+	}
+	.about-footer li a{
+		font-size:12px;
+	}
+}
