@@ -9,6 +9,16 @@ body{
 .mycarousel{
 	margin:40px 0 0 0;
 }
+.login-button{
+ margin-left:120px;
+ margin-top:10px;
+}
+/*小于760像素时，登录按钮左外边距修改*/
+@media (max-width:760px){
+    .login-button{
+        margin-left:10px;
+    }
+}
 /*下面@media是控制轮播图里面文字的响应式*/
 /*大于1500px*/
 @media (min-width:1500px){
@@ -21,6 +31,7 @@ body{
 	.mycarousel-text-top{
 		padding-bottom:150px;
 	}
+
 }
 /*小于1500px*/
 @media (max-width:1500px){
