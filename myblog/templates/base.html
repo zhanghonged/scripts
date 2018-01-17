@@ -1,45 +1,38 @@
 <!DOCTYPE html>
 {% load staticfiles %}
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>个人博客</title>
-    <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.min.css' %}">
+  <head>
+    <meta charset="utf-8">
+    <title>{% block title %}个人博客>{% endblock %}</title>
+	<link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.min.css' %}">
     <link rel="stylesheet" type="text/css" href="{% static 'css/font-awesome.min.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'css/responsive-nav.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'css/styles.css' %}">
     <link rel="stylesheet" type="text/css" href="{% static 'css/my.css' %}">
     <script type="text/javascript" src="{% static 'js/jquery-2.0.2.js' %}"></script>
     <script type="text/javascript" src="{% static 'js/bootstrap.min.js' %}"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-</head>
-<body>
-<!--导航条-->
-<nav class="navbar navbar-default navbar-fixed-top">
-    <div class="container">
-        <div class="navbar-header">
-            <a class="navbar-brand">博客</a>
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
-                    data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-        </div>
+	<script type="text/javascript" src="{% static 'js/responsive-nav.min.js' %}"></script>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <!--[if lte IE 8]><link rel="stylesheet" href="../../responsive-nav.css"><![endif]-->
+    <!--[if gt IE 8]><!--><link rel="stylesheet" href="styles.css"><!--<![endif]-->
+    <script src="../../responsive-nav.js"></script>
+  </head>
+  <body>
 
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <ul class="nav navbar-nav navbar-right">
-                <li class="active"><a href="{% url 'list' %}">首页</a></li>
-                <li><a href="{% url 'list' %}">分类</a></li>
-                <li><a href="{% url 'list' %}">归档</a></li>
-                <li><a href="{% url 'list' %}">标签</a></li>
-            </ul>
-        </div>
+    <div role="navigation" id="foo" class="nav-collapse">
+      <ul>
+        <li class="active"><a href="{% url 'list' %}">首页</a></li>
+        <li><a href="{% url 'list' %}">分类</a></li>
+        <li><a href="{% url 'list' %}">归档</a></li>
+        <li><a href="{% url 'list' %}">标签</a></li>
+      </ul>
     </div>
-</nav>
 
-<div class="container-fluid content-auto">
+    <div role="main" class="main">
+
+		<div class="container-fluid content-auto">
     <div class="row-fluid">
-        <div class="col-md-2">
+        <div class="col-md-2 myleft">
         </div>
         <div class="col-md-8">
             {% block content %}
@@ -48,6 +41,11 @@
         <div class="col-md-2">
         </div>
     </div>
-</div>
-</body>
+		</div> 
+    </div>
+
+    <script>
+      var navigation = responsiveNav("foo", {customToggle: ".nav-toggle"});
+    </script>
+  </body>
 </html>
