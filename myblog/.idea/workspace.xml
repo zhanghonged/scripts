@@ -1,18 +1,1559 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4076a244-e012-40d4-895a-6d4e52599350" name="Default" comment="" />
+    <list default="true" id="4076a244-e012-40d4-895a-6d4e52599350" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/../.idea/vcs.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/dataSources/9ab4cdc7-8420-4b75-bd17-06e8e3416f02.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/dataSources/9ab4cdc7-8420-4b75-bd17-06e8e3416f02/storage_v2/_src_/schema/main.uQUzAA.meta" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/admin/css/base.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/admin/css/changelists.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/admin/css/dashboard.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/admin/css/forms.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/admin/css/ie.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/admin/css/login.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/admin/css/rtl.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/admin/css/widgets.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/admin/img/changelist-bg.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/admin/img/changelist-bg_rtl.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/admin/img/default-bg-reverse.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/admin/img/default-bg.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/admin/img/deleted-overlay.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/admin/img/gis/move_vertex_off.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/admin/img/gis/move_vertex_on.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/admin/img/icon-no.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/admin/img/icon-unknown.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/admin/img/icon-yes.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/admin/img/icon_addlink.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/admin/img/icon_alert.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/admin/img/icon_calendar.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/admin/img/icon_changelink.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/admin/img/icon_clock.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/admin/img/icon_deletelink.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/admin/img/icon_error.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/admin/img/icon_searchbox.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/admin/img/icon_success.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/admin/img/inline-delete-8bit.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/admin/img/inline-delete.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/admin/img/inline-restore-8bit.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/admin/img/inline-restore.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/admin/img/inline-splitter-bg.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/admin/img/nav-bg-grabber.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/admin/img/nav-bg-reverse.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/admin/img/nav-bg-selected.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/admin/img/nav-bg.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/admin/img/selector-icons.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/admin/img/selector-search.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/admin/img/sorting-icons.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/admin/img/tooltag-add.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/admin/img/tooltag-arrowright.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/admin/js/LICENSE-JQUERY.txt" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/admin/js/SelectBox.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/admin/js/SelectFilter2.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/admin/js/actions.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/admin/js/actions.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/admin/js/admin/DateTimeShortcuts.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/admin/js/admin/RelatedObjectLookups.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/admin/js/calendar.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/admin/js/collapse.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/admin/js/collapse.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/admin/js/core.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/admin/js/inlines.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/admin/js/inlines.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/admin/js/jquery.init.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/admin/js/jquery.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/admin/js/jquery.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/admin/js/prepopulate.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/admin/js/prepopulate.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/admin/js/related-widget-wrapper.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/admin/js/timeparse.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/admin/js/urlify.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/admin/css/base.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/admin/css/changelists.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/admin/css/dashboard.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/admin/css/forms.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/admin/css/ie.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/admin/css/login.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/admin/css/rtl.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/admin/css/widgets.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/admin/img/changelist-bg.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/admin/img/changelist-bg_rtl.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/admin/img/default-bg-reverse.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/admin/img/default-bg.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/admin/img/deleted-overlay.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/admin/img/gis/move_vertex_off.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/admin/img/gis/move_vertex_on.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/admin/img/icon-no.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/admin/img/icon-unknown.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/admin/img/icon-yes.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/admin/img/icon_addlink.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/admin/img/icon_alert.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/admin/img/icon_calendar.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/admin/img/icon_changelink.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/admin/img/icon_clock.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/admin/img/icon_deletelink.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/admin/img/icon_error.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/admin/img/icon_searchbox.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/admin/img/icon_success.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/admin/img/inline-delete-8bit.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/admin/img/inline-delete.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/admin/img/inline-restore-8bit.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/admin/img/inline-restore.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/admin/img/inline-splitter-bg.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/admin/img/nav-bg-grabber.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/admin/img/nav-bg-reverse.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/admin/img/nav-bg-selected.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/admin/img/nav-bg.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/admin/img/selector-icons.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/admin/img/selector-search.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/admin/img/sorting-icons.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/admin/img/tooltag-add.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/admin/img/tooltag-arrowright.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/admin/js/LICENSE-JQUERY.txt" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/admin/js/SelectBox.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/admin/js/SelectFilter2.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/admin/js/actions.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/admin/js/actions.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/admin/js/admin/DateTimeShortcuts.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/admin/js/admin/RelatedObjectLookups.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/admin/js/calendar.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/admin/js/collapse.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/admin/js/collapse.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/admin/js/core.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/admin/js/inlines.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/admin/js/inlines.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/admin/js/jquery.init.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/admin/js/jquery.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/admin/js/jquery.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/admin/js/prepopulate.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/admin/js/prepopulate.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/admin/js/related-widget-wrapper.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/admin/js/timeparse.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/admin/js/urlify.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor-init.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/CHANGES.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/LICENSE.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/README.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/adapters/jquery.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/build-config.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/ckeditor.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/config.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/contents.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/lang/af.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/lang/ar.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/lang/az.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/lang/bg.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/lang/bn.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/lang/bs.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/lang/ca.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/lang/cs.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/lang/cy.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/lang/da.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/lang/de-ch.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/lang/de.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/lang/el.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/lang/en-au.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/lang/en-ca.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/lang/en-gb.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/lang/en.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/lang/eo.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/lang/es-mx.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/lang/es.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/lang/et.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/lang/eu.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/lang/fa.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/lang/fi.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/lang/fo.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/lang/fr-ca.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/lang/fr.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/lang/gl.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/lang/gu.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/lang/he.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/lang/hi.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/lang/hr.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/lang/hu.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/lang/id.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/lang/is.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/lang/it.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/lang/ja.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/lang/ka.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/lang/km.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/lang/ko.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/lang/ku.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/lang/lt.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/lang/lv.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/lang/mk.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/lang/mn.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/lang/ms.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/lang/nb.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/lang/nl.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/lang/no.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/lang/oc.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/lang/pl.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/lang/pt-br.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/lang/pt.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/lang/ro.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/lang/ru.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/lang/si.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/lang/sk.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/lang/sl.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/lang/sq.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/lang/sr-latn.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/lang/sr.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/lang/sv.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/lang/th.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/lang/tr.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/lang/tt.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/lang/ug.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/lang/uk.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/lang/vi.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/lang/zh-cn.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/lang/zh.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/a11yhelp/dialogs/a11yhelp.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/a11yhelp/dialogs/lang/_translationstatus.txt" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/a11yhelp/dialogs/lang/af.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/a11yhelp/dialogs/lang/ar.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/a11yhelp/dialogs/lang/az.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/a11yhelp/dialogs/lang/bg.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/a11yhelp/dialogs/lang/ca.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/a11yhelp/dialogs/lang/cs.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/a11yhelp/dialogs/lang/cy.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/a11yhelp/dialogs/lang/da.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/a11yhelp/dialogs/lang/de-ch.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/a11yhelp/dialogs/lang/de.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/a11yhelp/dialogs/lang/el.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/a11yhelp/dialogs/lang/en-gb.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/a11yhelp/dialogs/lang/en.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/a11yhelp/dialogs/lang/eo.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/a11yhelp/dialogs/lang/es-mx.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/a11yhelp/dialogs/lang/es.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/a11yhelp/dialogs/lang/et.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/a11yhelp/dialogs/lang/eu.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/a11yhelp/dialogs/lang/fa.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/a11yhelp/dialogs/lang/fi.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/a11yhelp/dialogs/lang/fo.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/a11yhelp/dialogs/lang/fr-ca.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/a11yhelp/dialogs/lang/fr.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/a11yhelp/dialogs/lang/gl.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/a11yhelp/dialogs/lang/gu.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/a11yhelp/dialogs/lang/he.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/a11yhelp/dialogs/lang/hi.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/a11yhelp/dialogs/lang/hr.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/a11yhelp/dialogs/lang/hu.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/a11yhelp/dialogs/lang/id.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/a11yhelp/dialogs/lang/it.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/a11yhelp/dialogs/lang/ja.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/a11yhelp/dialogs/lang/km.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/a11yhelp/dialogs/lang/ko.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/a11yhelp/dialogs/lang/ku.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/a11yhelp/dialogs/lang/lt.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/a11yhelp/dialogs/lang/lv.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/a11yhelp/dialogs/lang/mk.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/a11yhelp/dialogs/lang/mn.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/a11yhelp/dialogs/lang/nb.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/a11yhelp/dialogs/lang/nl.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/a11yhelp/dialogs/lang/no.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/a11yhelp/dialogs/lang/oc.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/a11yhelp/dialogs/lang/pl.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/a11yhelp/dialogs/lang/pt-br.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/a11yhelp/dialogs/lang/pt.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/a11yhelp/dialogs/lang/ro.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/a11yhelp/dialogs/lang/ru.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/a11yhelp/dialogs/lang/si.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/a11yhelp/dialogs/lang/sk.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/a11yhelp/dialogs/lang/sl.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/a11yhelp/dialogs/lang/sq.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/a11yhelp/dialogs/lang/sr-latn.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/a11yhelp/dialogs/lang/sr.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/a11yhelp/dialogs/lang/sv.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/a11yhelp/dialogs/lang/th.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/a11yhelp/dialogs/lang/tr.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/a11yhelp/dialogs/lang/tt.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/a11yhelp/dialogs/lang/ug.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/a11yhelp/dialogs/lang/uk.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/a11yhelp/dialogs/lang/vi.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/a11yhelp/dialogs/lang/zh-cn.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/a11yhelp/dialogs/lang/zh.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/about/dialogs/about.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/about/dialogs/hidpi/logo_ckeditor.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/about/dialogs/logo_ckeditor.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/adobeair/plugin.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/ajax/plugin.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/autoembed/lang/cs.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/autoembed/lang/de.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/autoembed/lang/en.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/autoembed/lang/it.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/autoembed/lang/ku.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/autoembed/lang/nb.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/autoembed/lang/pl.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/autoembed/lang/pt-br.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/autoembed/lang/tr.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/autoembed/lang/zh.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/autoembed/plugin.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/autogrow/plugin.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/autolink/plugin.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/bbcode/plugin.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/clipboard/dialogs/paste.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/codesnippet/dialogs/codesnippet.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/codesnippet/icons/codesnippet.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/codesnippet/icons/hidpi/codesnippet.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/codesnippet/lang/ar.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/codesnippet/lang/bg.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/codesnippet/lang/ca.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/codesnippet/lang/cs.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/codesnippet/lang/da.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/codesnippet/lang/de.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/codesnippet/lang/el.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/codesnippet/lang/en-gb.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/codesnippet/lang/en.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/codesnippet/lang/eo.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/codesnippet/lang/es.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/codesnippet/lang/et.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/codesnippet/lang/fa.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/codesnippet/lang/fi.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/codesnippet/lang/fr-ca.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/codesnippet/lang/fr.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/codesnippet/lang/gl.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/codesnippet/lang/he.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/codesnippet/lang/hr.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/codesnippet/lang/hu.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/codesnippet/lang/it.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/codesnippet/lang/ja.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/codesnippet/lang/km.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/codesnippet/lang/ko.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/codesnippet/lang/ku.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/codesnippet/lang/lt.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/codesnippet/lang/lv.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/codesnippet/lang/nb.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/codesnippet/lang/nl.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/codesnippet/lang/no.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/codesnippet/lang/pl.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/codesnippet/lang/pt-br.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/codesnippet/lang/pt.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/codesnippet/lang/ro.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/codesnippet/lang/ru.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/codesnippet/lang/sk.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/codesnippet/lang/sl.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/codesnippet/lang/sq.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/codesnippet/lang/sv.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/codesnippet/lang/th.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/codesnippet/lang/tr.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/codesnippet/lang/tt.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/codesnippet/lang/ug.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/codesnippet/lang/uk.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/codesnippet/lang/vi.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/codesnippet/lang/zh-cn.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/codesnippet/lang/zh.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/codesnippet/lib/highlight/CHANGES.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/codesnippet/lib/highlight/LICENSE" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/codesnippet/lib/highlight/README.ru.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/codesnippet/lib/highlight/highlight.pack.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/codesnippet/lib/highlight/styles/arta.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/codesnippet/lib/highlight/styles/ascetic.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/codesnippet/lib/highlight/styles/atelier-dune.dark.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/codesnippet/lib/highlight/styles/atelier-dune.light.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/codesnippet/lib/highlight/styles/atelier-forest.dark.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/codesnippet/lib/highlight/styles/atelier-forest.light.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/codesnippet/lib/highlight/styles/atelier-heath.dark.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/codesnippet/lib/highlight/styles/atelier-heath.light.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/codesnippet/lib/highlight/styles/atelier-lakeside.dark.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/codesnippet/lib/highlight/styles/atelier-lakeside.light.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/codesnippet/lib/highlight/styles/atelier-seaside.dark.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/codesnippet/lib/highlight/styles/atelier-seaside.light.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/codesnippet/lib/highlight/styles/brown_paper.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/codesnippet/lib/highlight/styles/brown_papersq.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/codesnippet/lib/highlight/styles/dark.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/codesnippet/lib/highlight/styles/default.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/codesnippet/lib/highlight/styles/docco.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/codesnippet/lib/highlight/styles/far.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/codesnippet/lib/highlight/styles/foundation.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/codesnippet/lib/highlight/styles/github.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/codesnippet/lib/highlight/styles/googlecode.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/codesnippet/lib/highlight/styles/idea.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/codesnippet/lib/highlight/styles/ir_black.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/codesnippet/lib/highlight/styles/magula.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/codesnippet/lib/highlight/styles/mono-blue.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/codesnippet/lib/highlight/styles/monokai.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/codesnippet/lib/highlight/styles/monokai_sublime.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/codesnippet/lib/highlight/styles/obsidian.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/codesnippet/lib/highlight/styles/paraiso.dark.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/codesnippet/lib/highlight/styles/paraiso.light.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/codesnippet/lib/highlight/styles/pojoaque.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/codesnippet/lib/highlight/styles/pojoaque.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/codesnippet/lib/highlight/styles/railscasts.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/codesnippet/lib/highlight/styles/rainbow.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/codesnippet/lib/highlight/styles/school_book.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/codesnippet/lib/highlight/styles/school_book.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/codesnippet/lib/highlight/styles/solarized_dark.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/codesnippet/lib/highlight/styles/solarized_light.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/codesnippet/lib/highlight/styles/sunburst.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/codesnippet/lib/highlight/styles/tomorrow-night-blue.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/codesnippet/lib/highlight/styles/tomorrow-night-bright.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/codesnippet/lib/highlight/styles/tomorrow-night-eighties.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/codesnippet/lib/highlight/styles/tomorrow-night.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/codesnippet/lib/highlight/styles/tomorrow.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/codesnippet/lib/highlight/styles/vs.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/codesnippet/lib/highlight/styles/xcode.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/codesnippet/lib/highlight/styles/zenburn.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/codesnippet/plugin.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/codesnippetgeshi/plugin.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/colordialog/dialogs/colordialog.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/colordialog/dialogs/colordialog.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/copyformatting/cursors/cursor-disabled.svg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/copyformatting/cursors/cursor.svg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/copyformatting/styles/copyformatting.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/devtools/lang/_translationstatus.txt" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/devtools/lang/ar.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/devtools/lang/bg.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/devtools/lang/ca.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/devtools/lang/cs.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/devtools/lang/cy.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/devtools/lang/da.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/devtools/lang/de.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/devtools/lang/el.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/devtools/lang/en-gb.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/devtools/lang/en.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/devtools/lang/eo.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/devtools/lang/es.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/devtools/lang/et.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/devtools/lang/eu.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/devtools/lang/fa.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/devtools/lang/fi.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/devtools/lang/fr-ca.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/devtools/lang/fr.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/devtools/lang/gl.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/devtools/lang/gu.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/devtools/lang/he.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/devtools/lang/hr.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/devtools/lang/hu.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/devtools/lang/id.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/devtools/lang/it.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/devtools/lang/ja.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/devtools/lang/km.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/devtools/lang/ko.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/devtools/lang/ku.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/devtools/lang/lt.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/devtools/lang/lv.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/devtools/lang/nb.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/devtools/lang/nl.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/devtools/lang/no.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/devtools/lang/pl.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/devtools/lang/pt-br.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/devtools/lang/pt.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/devtools/lang/ro.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/devtools/lang/ru.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/devtools/lang/si.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/devtools/lang/sk.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/devtools/lang/sl.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/devtools/lang/sq.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/devtools/lang/sv.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/devtools/lang/tr.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/devtools/lang/tt.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/devtools/lang/ug.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/devtools/lang/uk.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/devtools/lang/vi.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/devtools/lang/zh-cn.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/devtools/lang/zh.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/devtools/plugin.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/dialog/dialogDefinition.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/div/dialogs/div.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/divarea/plugin.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/docprops/dialogs/docprops.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/docprops/icons/docprops-rtl.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/docprops/icons/docprops.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/docprops/icons/hidpi/docprops-rtl.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/docprops/icons/hidpi/docprops.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/docprops/lang/af.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/docprops/lang/ar.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/docprops/lang/bg.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/docprops/lang/bn.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/docprops/lang/bs.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/docprops/lang/ca.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/docprops/lang/cs.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/docprops/lang/cy.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/docprops/lang/da.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/docprops/lang/de.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/docprops/lang/el.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/docprops/lang/en-au.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/docprops/lang/en-ca.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/docprops/lang/en-gb.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/docprops/lang/en.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/docprops/lang/eo.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/docprops/lang/es.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/docprops/lang/et.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/docprops/lang/eu.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/docprops/lang/fa.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/docprops/lang/fi.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/docprops/lang/fo.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/docprops/lang/fr-ca.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/docprops/lang/fr.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/docprops/lang/gl.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/docprops/lang/gu.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/docprops/lang/he.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/docprops/lang/hi.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/docprops/lang/hr.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/docprops/lang/hu.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/docprops/lang/id.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/docprops/lang/is.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/docprops/lang/it.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/docprops/lang/ja.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/docprops/lang/ka.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/docprops/lang/km.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/docprops/lang/ko.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/docprops/lang/ku.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/docprops/lang/lt.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/docprops/lang/lv.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/docprops/lang/mk.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/docprops/lang/mn.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/docprops/lang/ms.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/docprops/lang/nb.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/docprops/lang/nl.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/docprops/lang/no.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/docprops/lang/pl.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/docprops/lang/pt-br.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/docprops/lang/pt.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/docprops/lang/ro.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/docprops/lang/ru.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/docprops/lang/si.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/docprops/lang/sk.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/docprops/lang/sl.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/docprops/lang/sq.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/docprops/lang/sr-latn.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/docprops/lang/sr.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/docprops/lang/sv.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/docprops/lang/th.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/docprops/lang/tr.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/docprops/lang/tt.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/docprops/lang/ug.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/docprops/lang/uk.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/docprops/lang/vi.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/docprops/lang/zh-cn.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/docprops/lang/zh.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/docprops/plugin.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/embed/icons/embed.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/embed/icons/hidpi/embed.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/embed/plugin.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/embedbase/dialogs/embedbase.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/embedbase/lang/cs.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/embedbase/lang/da.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/embedbase/lang/de.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/embedbase/lang/en.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/embedbase/lang/eo.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/embedbase/lang/fr.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/embedbase/lang/gl.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/embedbase/lang/it.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/embedbase/lang/ko.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/embedbase/lang/ku.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/embedbase/lang/nb.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/embedbase/lang/nl.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/embedbase/lang/pl.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/embedbase/lang/pt-br.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/embedbase/lang/ru.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/embedbase/lang/sv.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/embedbase/lang/tr.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/embedbase/lang/zh-cn.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/embedbase/lang/zh.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/embedbase/plugin.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/embedsemantic/icons/embedsemantic.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/embedsemantic/icons/hidpi/embedsemantic.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/embedsemantic/plugin.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/filetools/lang/cs.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/filetools/lang/da.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/filetools/lang/de.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/filetools/lang/en.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/filetools/lang/eo.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/filetools/lang/fr.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/filetools/lang/gl.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/filetools/lang/it.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/filetools/lang/ko.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/filetools/lang/ku.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/filetools/lang/nb.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/filetools/lang/nl.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/filetools/lang/pl.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/filetools/lang/pt-br.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/filetools/lang/ru.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/filetools/lang/sv.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/filetools/lang/tr.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/filetools/lang/zh-cn.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/filetools/lang/zh.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/filetools/plugin.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/find/dialogs/find.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/flash/dialogs/flash.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/flash/images/placeholder.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/forms/dialogs/button.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/forms/dialogs/checkbox.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/forms/dialogs/form.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/forms/dialogs/hiddenfield.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/forms/dialogs/radio.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/forms/dialogs/select.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/forms/dialogs/textarea.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/forms/dialogs/textfield.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/forms/images/hiddenfield.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/icons.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/icons_hidpi.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/iframe/dialogs/iframe.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/iframe/images/placeholder.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/iframedialog/plugin.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/image/dialogs/image.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/image/images/noimage.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/image2/dialogs/image2.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/image2/icons/hidpi/image.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/image2/icons/image.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/image2/lang/af.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/image2/lang/ar.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/image2/lang/bg.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/image2/lang/bn.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/image2/lang/bs.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/image2/lang/ca.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/image2/lang/cs.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/image2/lang/cy.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/image2/lang/da.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/image2/lang/de.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/image2/lang/el.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/image2/lang/en-au.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/image2/lang/en-ca.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/image2/lang/en-gb.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/image2/lang/en.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/image2/lang/eo.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/image2/lang/es.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/image2/lang/et.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/image2/lang/eu.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/image2/lang/fa.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/image2/lang/fi.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/image2/lang/fo.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/image2/lang/fr-ca.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/image2/lang/fr.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/image2/lang/gl.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/image2/lang/gu.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/image2/lang/he.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/image2/lang/hi.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/image2/lang/hr.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/image2/lang/hu.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/image2/lang/id.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/image2/lang/is.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/image2/lang/it.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/image2/lang/ja.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/image2/lang/ka.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/image2/lang/km.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/image2/lang/ko.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/image2/lang/ku.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/image2/lang/lt.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/image2/lang/lv.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/image2/lang/mk.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/image2/lang/mn.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/image2/lang/ms.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/image2/lang/nb.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/image2/lang/nl.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/image2/lang/no.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/image2/lang/pl.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/image2/lang/pt-br.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/image2/lang/pt.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/image2/lang/ro.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/image2/lang/ru.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/image2/lang/si.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/image2/lang/sk.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/image2/lang/sl.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/image2/lang/sq.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/image2/lang/sr-latn.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/image2/lang/sr.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/image2/lang/sv.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/image2/lang/th.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/image2/lang/tr.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/image2/lang/tt.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/image2/lang/ug.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/image2/lang/uk.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/image2/lang/vi.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/image2/lang/zh-cn.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/image2/lang/zh.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/image2/plugin.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/language/icons/hidpi/language.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/language/icons/language.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/language/lang/ar.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/language/lang/bg.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/language/lang/ca.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/language/lang/cs.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/language/lang/cy.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/language/lang/da.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/language/lang/de.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/language/lang/el.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/language/lang/en-gb.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/language/lang/en.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/language/lang/eo.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/language/lang/es.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/language/lang/fa.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/language/lang/fi.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/language/lang/fo.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/language/lang/fr.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/language/lang/gl.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/language/lang/he.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/language/lang/hr.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/language/lang/hu.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/language/lang/it.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/language/lang/ja.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/language/lang/km.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/language/lang/ko.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/language/lang/ku.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/language/lang/nb.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/language/lang/nl.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/language/lang/no.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/language/lang/pl.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/language/lang/pt-br.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/language/lang/pt.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/language/lang/ru.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/language/lang/sk.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/language/lang/sl.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/language/lang/sq.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/language/lang/sv.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/language/lang/tr.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/language/lang/tt.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/language/lang/uk.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/language/lang/vi.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/language/lang/zh-cn.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/language/lang/zh.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/language/plugin.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/lineutils/plugin.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/link/dialogs/anchor.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/link/dialogs/link.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/link/images/anchor.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/link/images/hidpi/anchor.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/liststyle/dialogs/liststyle.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/magicline/images/hidpi/icon-rtl.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/magicline/images/hidpi/icon.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/magicline/images/icon-rtl.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/magicline/images/icon.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/mathjax/dialogs/mathjax.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/mathjax/icons/hidpi/mathjax.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/mathjax/icons/mathjax.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/mathjax/images/loader.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/mathjax/lang/af.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/mathjax/lang/ar.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/mathjax/lang/bg.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/mathjax/lang/ca.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/mathjax/lang/cs.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/mathjax/lang/cy.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/mathjax/lang/da.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/mathjax/lang/de.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/mathjax/lang/el.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/mathjax/lang/en-gb.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/mathjax/lang/en.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/mathjax/lang/eo.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/mathjax/lang/es.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/mathjax/lang/fa.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/mathjax/lang/fi.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/mathjax/lang/fr.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/mathjax/lang/gl.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/mathjax/lang/he.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/mathjax/lang/hr.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/mathjax/lang/hu.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/mathjax/lang/it.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/mathjax/lang/ja.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/mathjax/lang/km.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/mathjax/lang/ko.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/mathjax/lang/ku.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/mathjax/lang/lt.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/mathjax/lang/nb.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/mathjax/lang/nl.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/mathjax/lang/no.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/mathjax/lang/pl.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/mathjax/lang/pt-br.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/mathjax/lang/pt.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/mathjax/lang/ro.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/mathjax/lang/ru.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/mathjax/lang/sk.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/mathjax/lang/sl.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/mathjax/lang/sq.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/mathjax/lang/sv.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/mathjax/lang/tr.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/mathjax/lang/tt.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/mathjax/lang/uk.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/mathjax/lang/vi.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/mathjax/lang/zh-cn.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/mathjax/lang/zh.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/mathjax/plugin.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/menubutton/plugin.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/notification/lang/cs.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/notification/lang/da.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/notification/lang/de.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/notification/lang/en.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/notification/lang/eo.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/notification/lang/fr.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/notification/lang/gl.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/notification/lang/it.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/notification/lang/ko.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/notification/lang/ku.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/notification/lang/nb.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/notification/lang/nl.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/notification/lang/pl.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/notification/lang/pt-br.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/notification/lang/ru.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/notification/lang/sv.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/notification/lang/tr.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/notification/lang/zh-cn.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/notification/lang/zh.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/notification/plugin.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/notificationaggregator/plugin.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/pagebreak/images/pagebreak.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/pastefromword/filter/default.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/placeholder/dialogs/placeholder.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/placeholder/icons/hidpi/placeholder.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/placeholder/icons/placeholder.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/placeholder/lang/af.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/placeholder/lang/ar.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/placeholder/lang/bg.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/placeholder/lang/ca.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/placeholder/lang/cs.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/placeholder/lang/cy.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/placeholder/lang/da.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/placeholder/lang/de.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/placeholder/lang/el.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/placeholder/lang/en-gb.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/placeholder/lang/en.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/placeholder/lang/eo.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/placeholder/lang/es.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/placeholder/lang/et.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/placeholder/lang/eu.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/placeholder/lang/fa.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/placeholder/lang/fi.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/placeholder/lang/fr-ca.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/placeholder/lang/fr.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/placeholder/lang/gl.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/placeholder/lang/he.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/placeholder/lang/hr.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/placeholder/lang/hu.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/placeholder/lang/id.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/placeholder/lang/it.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/placeholder/lang/ja.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/placeholder/lang/km.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/placeholder/lang/ko.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/placeholder/lang/ku.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/placeholder/lang/lv.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/placeholder/lang/nb.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/placeholder/lang/nl.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/placeholder/lang/no.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/placeholder/lang/pl.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/placeholder/lang/pt-br.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/placeholder/lang/pt.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/placeholder/lang/ru.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/placeholder/lang/si.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/placeholder/lang/sk.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/placeholder/lang/sl.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/placeholder/lang/sq.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/placeholder/lang/sv.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/placeholder/lang/th.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/placeholder/lang/tr.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/placeholder/lang/tt.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/placeholder/lang/ug.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/placeholder/lang/uk.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/placeholder/lang/vi.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/placeholder/lang/zh-cn.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/placeholder/lang/zh.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/placeholder/plugin.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/preview/preview.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/scayt/CHANGELOG.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/scayt/LICENSE.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/scayt/README.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/scayt/dialogs/dialog.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/scayt/dialogs/options.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/scayt/dialogs/toolbar.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/scayt/skins/moono-lisa/scayt.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/sharedspace/plugin.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/showblocks/images/block_address.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/showblocks/images/block_blockquote.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/showblocks/images/block_div.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/showblocks/images/block_h1.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/showblocks/images/block_h2.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/showblocks/images/block_h3.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/showblocks/images/block_h4.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/showblocks/images/block_h5.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/showblocks/images/block_h6.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/showblocks/images/block_p.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/showblocks/images/block_pre.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/smiley/dialogs/smiley.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/smiley/images/angel_smile.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/smiley/images/angel_smile.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/smiley/images/angry_smile.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/smiley/images/angry_smile.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/smiley/images/broken_heart.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/smiley/images/broken_heart.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/smiley/images/confused_smile.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/smiley/images/confused_smile.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/smiley/images/cry_smile.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/smiley/images/cry_smile.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/smiley/images/devil_smile.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/smiley/images/devil_smile.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/smiley/images/embaressed_smile.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/smiley/images/embarrassed_smile.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/smiley/images/embarrassed_smile.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/smiley/images/envelope.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/smiley/images/envelope.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/smiley/images/heart.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/smiley/images/heart.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/smiley/images/kiss.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/smiley/images/kiss.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/smiley/images/lightbulb.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/smiley/images/lightbulb.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/smiley/images/omg_smile.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/smiley/images/omg_smile.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/smiley/images/regular_smile.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/smiley/images/regular_smile.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/smiley/images/sad_smile.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/smiley/images/sad_smile.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/smiley/images/shades_smile.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/smiley/images/shades_smile.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/smiley/images/teeth_smile.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/smiley/images/teeth_smile.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/smiley/images/thumbs_down.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/smiley/images/thumbs_down.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/smiley/images/thumbs_up.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/smiley/images/thumbs_up.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/smiley/images/tongue_smile.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/smiley/images/tongue_smile.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/smiley/images/tounge_smile.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/smiley/images/whatchutalkingabout_smile.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/smiley/images/whatchutalkingabout_smile.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/smiley/images/wink_smile.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/smiley/images/wink_smile.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/sourcedialog/dialogs/sourcedialog.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/sourcedialog/icons/hidpi/sourcedialog-rtl.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/sourcedialog/icons/hidpi/sourcedialog.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/sourcedialog/icons/sourcedialog-rtl.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/sourcedialog/icons/sourcedialog.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/sourcedialog/lang/af.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/sourcedialog/lang/ar.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/sourcedialog/lang/bg.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/sourcedialog/lang/bn.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/sourcedialog/lang/bs.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/sourcedialog/lang/ca.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/sourcedialog/lang/cs.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/sourcedialog/lang/cy.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/sourcedialog/lang/da.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/sourcedialog/lang/de.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/sourcedialog/lang/el.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/sourcedialog/lang/en-au.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/sourcedialog/lang/en-ca.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/sourcedialog/lang/en-gb.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/sourcedialog/lang/en.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/sourcedialog/lang/eo.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/sourcedialog/lang/es.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/sourcedialog/lang/et.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/sourcedialog/lang/eu.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/sourcedialog/lang/fa.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/sourcedialog/lang/fi.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/sourcedialog/lang/fo.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/sourcedialog/lang/fr-ca.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/sourcedialog/lang/fr.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/sourcedialog/lang/gl.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/sourcedialog/lang/gu.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/sourcedialog/lang/he.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/sourcedialog/lang/hi.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/sourcedialog/lang/hr.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/sourcedialog/lang/hu.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/sourcedialog/lang/id.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/sourcedialog/lang/is.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/sourcedialog/lang/it.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/sourcedialog/lang/ja.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/sourcedialog/lang/ka.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/sourcedialog/lang/km.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/sourcedialog/lang/ko.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/sourcedialog/lang/ku.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/sourcedialog/lang/lt.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/sourcedialog/lang/lv.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/sourcedialog/lang/mn.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/sourcedialog/lang/ms.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/sourcedialog/lang/nb.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/sourcedialog/lang/nl.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/sourcedialog/lang/no.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/sourcedialog/lang/pl.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/sourcedialog/lang/pt-br.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/sourcedialog/lang/pt.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/sourcedialog/lang/ro.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/sourcedialog/lang/ru.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/sourcedialog/lang/si.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/sourcedialog/lang/sk.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/sourcedialog/lang/sl.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/sourcedialog/lang/sq.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/sourcedialog/lang/sr-latn.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/sourcedialog/lang/sr.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/sourcedialog/lang/sv.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/sourcedialog/lang/th.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/sourcedialog/lang/tr.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/sourcedialog/lang/tt.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/sourcedialog/lang/ug.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/sourcedialog/lang/uk.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/sourcedialog/lang/vi.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/sourcedialog/lang/zh-cn.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/sourcedialog/lang/zh.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/sourcedialog/plugin.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/specialchar/dialogs/lang/_translationstatus.txt" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/specialchar/dialogs/lang/af.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/specialchar/dialogs/lang/ar.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/specialchar/dialogs/lang/az.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/specialchar/dialogs/lang/bg.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/specialchar/dialogs/lang/ca.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/specialchar/dialogs/lang/cs.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/specialchar/dialogs/lang/cy.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/specialchar/dialogs/lang/da.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/specialchar/dialogs/lang/de-ch.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/specialchar/dialogs/lang/de.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/specialchar/dialogs/lang/el.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/specialchar/dialogs/lang/en-au.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/specialchar/dialogs/lang/en-ca.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/specialchar/dialogs/lang/en-gb.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/specialchar/dialogs/lang/en.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/specialchar/dialogs/lang/eo.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/specialchar/dialogs/lang/es-mx.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/specialchar/dialogs/lang/es.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/specialchar/dialogs/lang/et.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/specialchar/dialogs/lang/eu.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/specialchar/dialogs/lang/fa.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/specialchar/dialogs/lang/fi.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/specialchar/dialogs/lang/fr-ca.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/specialchar/dialogs/lang/fr.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/specialchar/dialogs/lang/gl.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/specialchar/dialogs/lang/he.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/specialchar/dialogs/lang/hr.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/specialchar/dialogs/lang/hu.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/specialchar/dialogs/lang/id.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/specialchar/dialogs/lang/it.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/specialchar/dialogs/lang/ja.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/specialchar/dialogs/lang/km.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/specialchar/dialogs/lang/ko.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/specialchar/dialogs/lang/ku.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/specialchar/dialogs/lang/lt.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/specialchar/dialogs/lang/lv.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/specialchar/dialogs/lang/nb.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/specialchar/dialogs/lang/nl.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/specialchar/dialogs/lang/no.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/specialchar/dialogs/lang/oc.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/specialchar/dialogs/lang/pl.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/specialchar/dialogs/lang/pt-br.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/specialchar/dialogs/lang/pt.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/specialchar/dialogs/lang/ru.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/specialchar/dialogs/lang/si.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/specialchar/dialogs/lang/sk.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/specialchar/dialogs/lang/sl.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/specialchar/dialogs/lang/sq.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/specialchar/dialogs/lang/sv.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/specialchar/dialogs/lang/th.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/specialchar/dialogs/lang/tr.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/specialchar/dialogs/lang/tt.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/specialchar/dialogs/lang/ug.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/specialchar/dialogs/lang/uk.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/specialchar/dialogs/lang/vi.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/specialchar/dialogs/lang/zh-cn.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/specialchar/dialogs/lang/zh.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/specialchar/dialogs/specialchar.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/stylesheetparser/plugin.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/table/dialogs/table.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/tableresize/plugin.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/tableselection/styles/tableselection.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/tabletools/dialogs/tableCell.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/templates/dialogs/templates.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/templates/dialogs/templates.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/templates/templates/default.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/templates/templates/images/template1.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/templates/templates/images/template2.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/templates/templates/images/template3.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/uicolor/dialogs/uicolor.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/uicolor/icons/hidpi/uicolor.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/uicolor/icons/uicolor.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/uicolor/lang/_translationstatus.txt" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/uicolor/lang/af.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/uicolor/lang/ar.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/uicolor/lang/bg.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/uicolor/lang/ca.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/uicolor/lang/cs.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/uicolor/lang/cy.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/uicolor/lang/da.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/uicolor/lang/de.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/uicolor/lang/el.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/uicolor/lang/en-gb.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/uicolor/lang/en.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/uicolor/lang/eo.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/uicolor/lang/es.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/uicolor/lang/et.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/uicolor/lang/eu.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/uicolor/lang/fa.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/uicolor/lang/fi.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/uicolor/lang/fr-ca.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/uicolor/lang/fr.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/uicolor/lang/gl.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/uicolor/lang/he.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/uicolor/lang/hr.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/uicolor/lang/hu.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/uicolor/lang/id.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/uicolor/lang/it.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/uicolor/lang/ja.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/uicolor/lang/km.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/uicolor/lang/ko.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/uicolor/lang/ku.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/uicolor/lang/lv.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/uicolor/lang/mk.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/uicolor/lang/nb.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/uicolor/lang/nl.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/uicolor/lang/no.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/uicolor/lang/pl.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/uicolor/lang/pt-br.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/uicolor/lang/pt.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/uicolor/lang/ru.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/uicolor/lang/si.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/uicolor/lang/sk.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/uicolor/lang/sl.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/uicolor/lang/sq.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/uicolor/lang/sv.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/uicolor/lang/tr.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/uicolor/lang/tt.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/uicolor/lang/ug.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/uicolor/lang/uk.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/uicolor/lang/vi.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/uicolor/lang/zh-cn.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/uicolor/lang/zh.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/uicolor/plugin.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/uicolor/yui/assets/hue_bg.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/uicolor/yui/assets/hue_thumb.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/uicolor/yui/assets/picker_mask.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/uicolor/yui/assets/picker_thumb.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/uicolor/yui/assets/yui.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/uicolor/yui/yui.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/uploadimage/plugin.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/uploadwidget/lang/cs.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/uploadwidget/lang/da.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/uploadwidget/lang/de.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/uploadwidget/lang/en.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/uploadwidget/lang/eo.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/uploadwidget/lang/fr.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/uploadwidget/lang/gl.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/uploadwidget/lang/hu.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/uploadwidget/lang/it.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/uploadwidget/lang/ko.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/uploadwidget/lang/ku.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/uploadwidget/lang/nb.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/uploadwidget/lang/nl.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/uploadwidget/lang/pl.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/uploadwidget/lang/pt-br.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/uploadwidget/lang/ru.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/uploadwidget/lang/sv.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/uploadwidget/lang/tr.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/uploadwidget/lang/zh-cn.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/uploadwidget/lang/zh.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/uploadwidget/plugin.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/widget/images/handle.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/widget/lang/af.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/widget/lang/ar.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/widget/lang/bg.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/widget/lang/ca.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/widget/lang/cs.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/widget/lang/cy.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/widget/lang/da.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/widget/lang/de.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/widget/lang/el.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/widget/lang/en-gb.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/widget/lang/en.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/widget/lang/eo.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/widget/lang/es.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/widget/lang/fa.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/widget/lang/fi.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/widget/lang/fr.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/widget/lang/gl.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/widget/lang/he.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/widget/lang/hr.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/widget/lang/hu.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/widget/lang/it.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/widget/lang/ja.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/widget/lang/km.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/widget/lang/ko.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/widget/lang/ku.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/widget/lang/lv.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/widget/lang/nb.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/widget/lang/nl.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/widget/lang/no.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/widget/lang/pl.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/widget/lang/pt-br.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/widget/lang/pt.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/widget/lang/ru.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/widget/lang/sk.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/widget/lang/sl.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/widget/lang/sq.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/widget/lang/sv.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/widget/lang/tr.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/widget/lang/tt.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/widget/lang/uk.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/widget/lang/vi.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/widget/lang/zh-cn.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/widget/lang/zh.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/widget/plugin.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/wsc/LICENSE.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/wsc/README.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/wsc/dialogs/ciframe.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/wsc/dialogs/tmpFrameset.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/wsc/dialogs/wsc.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/wsc/dialogs/wsc.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/wsc/dialogs/wsc_ie.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/wsc/skins/moono-lisa/wsc.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/plugins/xml/plugin.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/skins/moono-lisa/dialog.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/skins/moono-lisa/dialog_ie.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/skins/moono-lisa/dialog_ie8.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/skins/moono-lisa/dialog_iequirks.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/skins/moono-lisa/editor.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/skins/moono-lisa/editor_gecko.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/skins/moono-lisa/editor_ie.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/skins/moono-lisa/editor_ie8.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/skins/moono-lisa/editor_iequirks.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/skins/moono-lisa/icons.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/skins/moono-lisa/icons_hidpi.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/skins/moono-lisa/images/arrow.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/skins/moono-lisa/images/close.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/skins/moono-lisa/images/hidpi/close.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/skins/moono-lisa/images/hidpi/lock-open.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/skins/moono-lisa/images/hidpi/lock.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/skins/moono-lisa/images/hidpi/refresh.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/skins/moono-lisa/images/lock-open.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/skins/moono-lisa/images/lock.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/skins/moono-lisa/images/refresh.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/skins/moono-lisa/images/spinner.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/skins/moono-lisa/readme.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/skins/moono/dialog.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/skins/moono/dialog_ie.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/skins/moono/dialog_ie7.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/skins/moono/dialog_ie8.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/skins/moono/dialog_iequirks.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/skins/moono/editor.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/skins/moono/editor_gecko.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/skins/moono/editor_ie.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/skins/moono/editor_ie7.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/skins/moono/editor_ie8.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/skins/moono/editor_iequirks.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/skins/moono/icons.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/skins/moono/icons_hidpi.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/skins/moono/images/arrow.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/skins/moono/images/close.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/skins/moono/images/hidpi/close.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/skins/moono/images/hidpi/lock-open.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/skins/moono/images/hidpi/lock.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/skins/moono/images/hidpi/refresh.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/skins/moono/images/lock-open.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/skins/moono/images/lock.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/skins/moono/images/refresh.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/skins/moono/images/spinner.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/skins/moono/readme.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor/styles.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/ckeditor_uploader/admin_base.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/css/bootstrap.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/css/font-awesome.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/css/my.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/css/responsive-nav.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/css/styles.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/file-icons/doc.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/file-icons/file.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/file-icons/pdf.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/file-icons/ppt.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/file-icons/swf.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/file-icons/txt.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/file-icons/xls.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/fonts/FontAwesome.otf" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/fonts/fontawesome-webfont.eot" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/fonts/fontawesome-webfont.svg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/fonts/fontawesome-webfont.ttf" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/fonts/fontawesome-webfont.woff" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/fonts/glyphicons-halflings-regular.eot" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/fonts/glyphicons-halflings-regular.svg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/fonts/glyphicons-halflings-regular.ttf" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/fonts/glyphicons-halflings-regular.woff" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/fonts/glyphicons-halflings-regular.woff2" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/galleriffic/css/basic.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/galleriffic/css/black.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/galleriffic/css/caption.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/galleriffic/css/galleriffic-1.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/galleriffic/css/galleriffic-2.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/galleriffic/css/galleriffic-3.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/galleriffic/css/galleriffic-4.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/galleriffic/css/galleriffic-5.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/galleriffic/css/jush.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/galleriffic/css/loader.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/galleriffic/css/loaderWhite.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/galleriffic/css/nextPageArrow.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/galleriffic/css/nextPageArrowWhite.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/galleriffic/css/prevPageArrow.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/galleriffic/css/prevPageArrowWhite.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/galleriffic/css/white.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/galleriffic/js/jquery-1.3.2.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/galleriffic/js/jquery.galleriffic.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/galleriffic/js/jquery.history.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/galleriffic/js/jquery.opacityrollover.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/galleriffic/js/jush.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/images/debut_dark.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/images/debut_dark_@2X.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/js/bootstrap.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/js/jquery-2.0.2.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/ckeditor/js/responsive-nav.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/css/bootstrap.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/css/font-awesome.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/css/my.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/css/responsive-nav.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/css/styles.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/fonts/FontAwesome.otf" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/fonts/fontawesome-webfont.eot" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/fonts/fontawesome-webfont.svg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/fonts/fontawesome-webfont.ttf" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/fonts/fontawesome-webfont.woff" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/fonts/glyphicons-halflings-regular.eot" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/fonts/glyphicons-halflings-regular.svg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/fonts/glyphicons-halflings-regular.ttf" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/fonts/glyphicons-halflings-regular.woff" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/fonts/glyphicons-halflings-regular.woff2" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/images/debut_dark.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/images/debut_dark_@2X.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/js/bootstrap.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/js/jquery-2.0.2.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/ckeditor/js/responsive-nav.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/images/avatar3.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/images/avatar5.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/article/static/images/avatar6.jpg" />
+      <change beforePath="$PROJECT_DIR$/../bootstrap-cmdb/css/font-awesome.css" afterPath="$PROJECT_DIR$/../bootstrap-cmdb/css/font-awesome.css" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/myblog.iml" afterPath="$PROJECT_DIR$/.idea/myblog.iml" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/article/admin.py" afterPath="$PROJECT_DIR$/article/admin.py" />
+      <change beforePath="$PROJECT_DIR$/article/migrations/0001_initial.py" afterPath="$PROJECT_DIR$/article/migrations/0001_initial.py" />
+      <change beforePath="$PROJECT_DIR$/article/models.py" afterPath="$PROJECT_DIR$/article/models.py" />
+      <change beforePath="$PROJECT_DIR$/article/static/css/my.css" afterPath="$PROJECT_DIR$/article/static/css/my.css" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" afterPath="$PROJECT_DIR$/db.sqlite3" />
+      <change beforePath="$PROJECT_DIR$/myblog/settings.py" afterPath="$PROJECT_DIR$/myblog/settings.py" />
+      <change beforePath="$PROJECT_DIR$/myblog/urls.py" afterPath="$PROJECT_DIR$/myblog/urls.py" />
+      <change beforePath="$PROJECT_DIR$/templates/article_list.html" afterPath="$PROJECT_DIR$/templates/article_list.html" />
+      <change beforePath="$PROJECT_DIR$/templates/base.html" afterPath="$PROJECT_DIR$/templates/base.html" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_TABLE_DETAILS" value="true" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <expand />
+    <select />
+  </component>
+  <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
+    <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/article/models.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="406">
+              <caret line="38" column="26" lean-forward="true" selection-start-line="38" selection-start-column="26" selection-end-line="38" selection-end-column="26" />
+              <folding>
+                <element signature="e#14#42#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="article_list.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/article_list.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="484">
+              <caret line="22" column="14" lean-forward="true" selection-start-line="22" selection-start-column="14" selection-end-line="22" selection-end-column="14" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="base.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/templates/base.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="638">
+              <caret line="29" column="23" lean-forward="true" selection-start-line="29" selection-start-column="23" selection-end-line="29" selection-end-column="23" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/article/views.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="admin.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/article/admin.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="286">
+              <caret line="13" column="0" lean-forward="true" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#32#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="settings.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/myblog/settings.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="740">
+              <caret line="124" column="33" lean-forward="true" selection-start-line="124" selection-start-column="33" selection-end-line="124" selection-end-column="33" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/myblog/urls.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="340">
+              <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>nav-toggle</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/myblog/urls.py" />
+        <option value="$PROJECT_DIR$/myblog/settings.py" />
+        <option value="$PROJECT_DIR$/article/models.py" />
+        <option value="$PROJECT_DIR$/article/admin.py" />
+        <option value="$PROJECT_DIR$/templates/article_list.html" />
+        <option value="$PROJECT_DIR$/article/static/css/my.css" />
+        <option value="$PROJECT_DIR$/templates/base.html" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="814" />
+    <option name="y" value="125" />
+    <option name="width" value="1170" />
+    <option name="height" value="810" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="myblog" type="b2602c69:ProjectViewProjectNode" />
+              <item name="myblog" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="myblog" type="b2602c69:ProjectViewProjectNode" />
+              <item name="myblog" type="462c0819:PsiDirectoryNode" />
+              <item name="article" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="myblog" type="b2602c69:ProjectViewProjectNode" />
+              <item name="myblog" type="462c0819:PsiDirectoryNode" />
+              <item name="article" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="myblog" type="b2602c69:ProjectViewProjectNode" />
+              <item name="myblog" type="462c0819:PsiDirectoryNode" />
+              <item name="article" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="myblog" type="b2602c69:ProjectViewProjectNode" />
+              <item name="myblog" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scratches" />
+      <pane id="Scope" />
+    </panes>
+  </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="configurable.group.tools" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PythonContentEntriesConfigurable" />
     <property name="nodejs_interpreter_path" value="C:/Program Files/nodejs/node" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../MyProject" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
   </component>
   <component name="RunManager">
+    <configuration name="myblog" type="Python.DjangoServer" factoryName="Django server">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="DJANGO_SETTINGS_MODULE" value="myblog.settings" />
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="C:\Python27\python.exe" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="myblog" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <option name="port" value="8000" />
+      <option name="host" value="" />
+      <option name="additionalOptions" value="" />
+      <option name="browserUrl" value="" />
+      <option name="runTestServer" value="false" />
+      <option name="runNoReload" value="false" />
+      <option name="useCustomRunCommand" value="false" />
+      <option name="customRunCommand" value="" />
+    </configuration>
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="WIDTH" value="400" />
       <option name="HEIGHT" value="300" />
@@ -103,8 +1644,12 @@
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
   </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
+      <changelist id="4076a244-e012-40d4-895a-6d4e52599350" name="Default" comment="" />
       <created>1516156907953</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -112,12 +1657,154 @@
     </task>
     <servers />
   </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <layout>
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34020618" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3078056" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1977612" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31769723" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="SciView" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32959852" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+    <layout-to-restore>
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34020618" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3078056" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17207207" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31801802" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="SciView" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32959852" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+    </layout-to-restore>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/manage.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="7" column="43" lean-forward="true" selection-start-line="7" selection-start-column="43" selection-end-line="7" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/article/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="406">
+          <caret line="38" column="26" lean-forward="true" selection-start-line="38" selection-start-column="26" selection-end-line="38" selection-end-column="26" />
+          <folding>
+            <element signature="e#14#42#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myblog/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/article/admin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="13" column="0" lean-forward="true" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/article/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myblog/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="740">
+          <caret line="124" column="33" lean-forward="true" selection-start-line="124" selection-start-column="33" selection-end-line="124" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://table:/3a9434f6/9ab4cdc7-8420-4b75-bd17-06e8e3416f02/main.article_author">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://table:/3a9434f6/9ab4cdc7-8420-4b75-bd17-06e8e3416f02/main.article_article">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/article/static/css/my.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="440">
+          <caret line="20" column="1" lean-forward="true" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/article_list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="484">
+          <caret line="22" column="14" lean-forward="true" selection-start-line="22" selection-start-column="14" selection-end-line="22" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="638">
+          <caret line="29" column="23" lean-forward="true" selection-start-line="29" selection-start-column="23" selection-end-line="29" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
   </component>
   <component name="masterDetails">
     <states>

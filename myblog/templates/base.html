@@ -1,51 +1,38 @@
 <!DOCTYPE html>
 {% load staticfiles %}
 <html lang="en">
-  <head>
+<head>
     <meta charset="utf-8">
     <title>{% block title %}个人博客>{% endblock %}</title>
-	<link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.min.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.min.css' %}">
     <link rel="stylesheet" type="text/css" href="{% static 'css/font-awesome.min.css' %}">
-	<link rel="stylesheet" type="text/css" href="{% static 'css/responsive-nav.css' %}">
-	<link rel="stylesheet" type="text/css" href="{% static 'css/styles.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/responsive-nav.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/styles.css' %}">
     <link rel="stylesheet" type="text/css" href="{% static 'css/my.css' %}">
     <script type="text/javascript" src="{% static 'js/jquery-2.0.2.js' %}"></script>
     <script type="text/javascript" src="{% static 'js/bootstrap.min.js' %}"></script>
-	<script type="text/javascript" src="{% static 'js/responsive-nav.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/responsive-nav.min.js' %}"></script>
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <!--[if lte IE 8]><link rel="stylesheet" href="../../responsive-nav.css"><![endif]-->
-    <!--[if gt IE 8]><!--><link rel="stylesheet" href="styles.css"><!--<![endif]-->
-    <script src="../../responsive-nav.js"></script>
-  </head>
-  <body>
 
-    <div role="navigation" id="foo" class="nav-collapse">
-      <ul>
+</head>
+<body>
+
+<div role="navigation" id="foo" class="nav-collapse">
+    <ul>
         <li class="active"><a href="{% url 'list' %}">首页</a></li>
         <li><a href="{% url 'list' %}">分类</a></li>
         <li><a href="{% url 'list' %}">归档</a></li>
         <li><a href="{% url 'list' %}">标签</a></li>
-      </ul>
-    </div>
+    </ul>
+</div>
 
-    <div role="main" class="main">
+<div role="main" class="main">
+    {% block content %}
+    {% endblock %}
+</div>
 
-		<div class="container-fluid content-auto">
-    <div class="row-fluid">
-        <div class="col-md-2 myleft">
-        </div>
-        <div class="col-md-8">
-            {% block content %}
-            {% endblock %}
-        </div>
-        <div class="col-md-2">
-        </div>
-    </div>
-		</div> 
-    </div>
-
-    <script>
-      var navigation = responsiveNav("foo", {customToggle: ".nav-toggle"});
-    </script>
-  </body>
+<script>
+    var navigation = responsiveNav("foo", {customToggle: ".nav-toggle"});
+</script>
+</body>
 </html>

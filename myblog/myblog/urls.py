@@ -21,5 +21,5 @@ urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
     url(r'^list/',views.Article_list,name='list'),
     url(r'^article/(\d+)',views.Article_content,name='cont'),
-    url(r'^test/',views.test),
+    url(r'ckeditory/',include('ckeditor_uploader.urls'))
 ]

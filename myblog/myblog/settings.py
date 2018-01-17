@@ -1,3 +1,4 @@
+#coding:utf-8
 """
 Django settings for myblog project.
 
@@ -38,6 +39,8 @@ INSTALLED_APPS = (
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'article',
+    'ckeditor',
+    'ckeditor_uploader'
 )
 
 MIDDLEWARE_CLASSES = (
@@ -105,3 +108,18 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS=(
     os.path.join(BASE_DIR, 'article', 'static').replace('\\','/'),
 )
+
+MEDIA_URL = '/media/' #绝对不可用和STATIC_URL-一致
+MEDIA_ROOT = os.path.join(BASE_DIR, 'article', 'static').replace('\\','/')
+
+#cheditor静态文件存放位置
+STATIC_ROOT = os.path.join(BASE_DIR, 'article', 'static/ckeditor').replace('\\','/')
+
+#ckeditor上传文件位置
+CKEDITOR_UPLOAD_PATH = os.path.join(BASE_DIR, 'article', 'static').replace('\\','/')
+
+#ckeditor用到的jq文件路径
+CKEDITOR_JQUERY_URL = '/static/js/jquery-2.0.2.js'
+
+#ckeditor使用的图片路径
+CKEDITOR_IMAGE_BACKEND = 'pillow'

@@ -1,22 +1,23 @@
 {% extends 'base.html' %}
+{% load staticfiles %}
 
 {% block title %}
-    文字列表
+    文章列表
 {% endblock %}
 
 {% block content %}
-
-    <div class="">
-        <div>
-            {% for article in article_list %}
-                <div class="mytitle">
-                <a href="{% url 'cont' article.id %}">{{ article.title }}</a>
-                </div>
+    {% for article in article_list %}
+        <div class="container">
+            <div class="col-md-3 myimg media">
+{#                <img class="img-responsive" src="/static/{{ article.img }}" alt="没有图片">#}
+                <img class="img-responsive" src="{% static article.img %}" alt="没有图片">
+            </div>
+            <div class="clo-md=9">
+                <a class="mytitle" href="{% url 'cont' article.id %}">{{ article.title }}</a>
                 <div class="mynote">{{ article.time }}</div>
-                <br>
-            {% endfor %}
+                <div>{{ article.description | safe }}</div>
+            </div>
+            <br>
         </div>
-
-    </div>
-
+    {% endfor %}
 {% endblock %}
