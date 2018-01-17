@@ -1,0 +1,41 @@
+*{
+	margin:0;
+	padding: 0;
+}
+a{
+	text-decoration:none; /*去除默认的a连接的下划线*/
+	color:#999;
+}
+.content-auto{
+	margin-top: 100px;
+}
+.mytitle{
+	font-size: 26px;
+	font-weight: 400;
+	line-height:1.2;
+}
+.article-title{
+	text-align: center;
+}
+.mytitle a{
+	color:#555;
+	font-size: 26px;
+}
+.mynote{
+	color: #999;
+	font-family: 'Lato', "PingFang SC", "Microsoft YaHei", sans-serif;
+	font-size: 12px;
+}
+
+.myarticle{
+	/*font-family: 'Lato', "PingFang SC", "Microsoft YaHei", sans-serif;*/
+	text-align: justify;
+	font-size: 16px;
+	line-height:2;
+	text-indent:30px;
+	margin-top: 40px;
+}
+.article-note{
+	text-align: right;
+	margin-top: 10px;
+}
