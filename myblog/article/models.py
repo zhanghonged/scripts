@@ -17,8 +17,8 @@ class Article(models.Model):
     time = models.DateField(auto_now=True,verbose_name='发表日期')
     author = models.ForeignKey('Author') #一个作者有多篇文章
     img = models.ImageField(upload_to='images',verbose_name='文章图片',blank=True)
-    content = models.TextField('文章内容',blank=True)
-    description = RichTextUploadingField(verbose_name='文章描述', blank=True)
+    content = RichTextUploadingField(verbose_name='文字内容',blank=True)
+    description = models.TextField(verbose_name='文章描述', blank=True)
 
     def __unicode__(self):
         return self.title

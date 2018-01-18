@@ -10,7 +10,7 @@
             <h1>{{ article.title }}</h1>
         </div>
         <div class="myarticle">
-        {{ article.content }}
+        {{ article.content | safe}}
         </div>
         <div class="mynote article-note">
             发表于:{{ article.time }}&nbsp;|&nbsp;作者:{{ article.author }}

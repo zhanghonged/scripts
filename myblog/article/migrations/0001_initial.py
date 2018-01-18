@@ -18,8 +18,8 @@ class Migration(migrations.Migration):
                 ('title', models.CharField(max_length=64, verbose_name=b'\xe6\x96\x87\xe7\xab\xa0\xe6\xa0\x87\xe9\xa2\x98')),
                 ('time', models.DateField(auto_now=True, verbose_name=b'\xe5\x8f\x91\xe8\xa1\xa8\xe6\x97\xa5\xe6\x9c\x9f')),
                 ('img', models.ImageField(upload_to=b'images', verbose_name=b'\xe6\x96\x87\xe7\xab\xa0\xe5\x9b\xbe\xe7\x89\x87', blank=True)),
-                ('content', models.TextField(verbose_name=b'\xe6\x96\x87\xe7\xab\xa0\xe5\x86\x85\xe5\xae\xb9', blank=True)),
-                ('description', ckeditor_uploader.fields.RichTextUploadingField(verbose_name=b'\xe6\x96\x87\xe7\xab\xa0\xe6\x8f\x8f\xe8\xbf\xb0', blank=True)),
+                ('content', ckeditor_uploader.fields.RichTextUploadingField(verbose_name=b'\xe6\x96\x87\xe5\xad\x97\xe5\x86\x85\xe5\xae\xb9', blank=True)),
+                ('description', models.TextField(verbose_name=b'\xe6\x96\x87\xe7\xab\xa0\xe6\x8f\x8f\xe8\xbf\xb0', blank=True)),
             ],
         ),
         migrations.CreateModel(

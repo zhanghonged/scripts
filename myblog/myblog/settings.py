@@ -106,20 +106,23 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATICFILES_DIRS=(
-    os.path.join(BASE_DIR, 'article', 'static').replace('\\','/'),
+    os.path.join(BASE_DIR, 'static').replace('\\','/'),
 )
 
 MEDIA_URL = '/media/' #绝对不可用和STATIC_URL-一致
-MEDIA_ROOT = os.path.join(BASE_DIR, 'article', 'static').replace('\\','/')
+MEDIA_ROOT = os.path.join(BASE_DIR, 'static').replace('\\','/')
 
 #cheditor静态文件存放位置
-STATIC_ROOT = os.path.join(BASE_DIR, 'article', 'static/ckeditor').replace('\\','/')
+# STATIC_ROOT = os.path.join(BASE_DIR, 'static/ckeditor').replace('\\','/')
+# STATIC_ROOT 是在部署静态文件时(pyhtonmanage.pycollectstatic)所有的静态文静聚合的目录
+# STATIC_ROOT 是在部署的时候才发挥作用
+
 
 #ckeditor上传文件位置
-CKEDITOR_UPLOAD_PATH = os.path.join(BASE_DIR, 'article', 'static').replace('\\','/')
+CKEDITOR_UPLOAD_PATH = os.path.join(BASE_DIR, 'static').replace('\\','/')
 
 #ckeditor用到的jq文件路径
 CKEDITOR_JQUERY_URL = '/static/js/jquery-2.0.2.js'
 
-#ckeditor使用的图片路径
+#ckeditor使用的图片模块
 CKEDITOR_IMAGE_BACKEND = 'pillow'
