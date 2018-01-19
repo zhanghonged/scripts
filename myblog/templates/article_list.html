@@ -9,13 +9,12 @@
     {% for article in article_list %}
         <div class="container">
             <div class="col-md-3 myimg media">
-{#                <img class="img-responsive" src="/static/{{ article.img }}" alt="没有图片">#}
-                <img class="img-responsive" src="{% static article.img %}" alt="没有图片">
+                <img class="img-responsive" src="/media/{{ article.img }}" alt="图片丢失">
             </div>
             <div class="clo-md=9">
                 <a class="mytitle" href="{% url 'cont' article.id %}">{{ article.title }}</a>
                 <div class="mynote">{{ article.time }}</div>
-                <div>{{ article.description | safe }}</div>
+                <div class="mydescription">{{ article.description }}</div>
             </div>
             <br>
         </div>
