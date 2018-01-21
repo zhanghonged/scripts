@@ -1,5 +1,4 @@
 {% extends "base.html" %}
-
 {% block title %}
     {{ article.title }}
 {% endblock %}
@@ -10,10 +9,25 @@
             <h1>{{ article.title }}</h1>
         </div>
         <div class="myarticle">
-        {{ article.content | safe}}
+            {{ article.content | safe }}
         </div>
         <div class="mynote article-note">
             发表于:{{ article.time }}&nbsp;|&nbsp;作者:{{ article.author }}
         </div>
     </div>
+
+    <nav aria-label="...">
+        <ul class="pager">
+            {% if before_page %}
+            <li class="previous"><a href="{% url 'cont' before_page.id %}"><span aria-hidden="true">&larr;</span>&nbsp;&nbsp;{{ before_page.title }}</a></li>
+
+            {% endif %}
+            {% if after_page %}
+            <li class="next"><a href="{% url 'cont' after_page.id %}">{{ after_page.title }}&nbsp;&nbsp;<span aria-hidden="true">&rarr;</span></a></li>
+
+            {% endif %}
+        </ul>
+    </nav>
 {% endblock %}
+
+

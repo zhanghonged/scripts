@@ -16,7 +16,7 @@ class Article(models.Model):
     title = models.CharField(max_length=64,verbose_name='文章标题')
     time = models.DateField(auto_now=True,verbose_name='发表日期')
     author = models.ForeignKey('Author') #一个作者有多篇文章
-    img = models.ImageField(upload_to='images',verbose_name='文章图片',blank=True)
+    img = models.ImageField(upload_to='images',default='images/default.jpg',verbose_name='文章图片',blank=True)
     content = RichTextUploadingField(verbose_name='文字内容',blank=True)
     description = models.TextField(verbose_name='文章描述', blank=True)
 

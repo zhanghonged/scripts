@@ -1,17 +1,19 @@
 {% extends 'base.html' %}
 {% load staticfiles %}
 
+
 {% block title %}
     文章列表
 {% endblock %}
 
 {% block content %}
+    <!--页面内容-->
     {% for article in article_list %}
         <div class="container">
             <div class="col-md-3 myimg media">
-                <img class="img-responsive" src="/media/{{ article.img }}" alt="图片丢失">
+                <img class="img-responsive" src="/media/{{ article.img }}">
             </div>
-            <div class="clo-md=9">
+            <div class="col-md=9">
                 <a class="mytitle" href="{% url 'cont' article.id %}">{{ article.title }}</a>
                 <div class="mynote">{{ article.time }}</div>
                 <div class="mydescription">{{ article.description }}</div>
@@ -19,7 +21,47 @@
             <br>
         </div>
     {% endfor %}
-{% endblock %}
 
-{% block page %}
+    <!--分页信息-->
+    <div class="mypagination">
+        <nav aria-label="Page navigation">
+            <ul class="pagination">
+                {% if cus_list.has_previous %}
+                    <li>
+                        <a href="?page={{ cus_list.previous_page_number }}" aria-label="Previous">
+                            <span aria-hidden="true">&laquo;</span>
+                        </a>
+                    </li>
+                {% else %}
+                    <li class="disabled">
+                        <a href="#" aria-label="Previous">
+                            <span aria-hidden="true">&laquo;</span>
+                        </a>
+                    </li>
+                {% endif %}
+
+                {% for pg in cus_list.paginator.page_range %}
+                    {% if cus_list.number == pg %}
+                        <li class="active"><a href="?page={{ pg }}">{{ pg }}</a></li>
+                    {% else %}
+                        <li><a href="?page={{ pg }}">{{ pg }}</a></li>
+                    {% endif %}
+                {% endfor %}
+
+                {% if cus_list.has_next %}
+                    <li>
+                        <a href="?page={{ cus_list.next_page_number }}" aria-label="Next">
+                            <span aria-hidden="true">&raquo;</span>
+                        </a>
+                    </li>
+                {% else %}
+                    <li class="disabled">
+                        <a href="#" aria-label="Next">
+                            <span aria-hidden="true">&raquo;</span>
+                        </a>
+                    </li>
+                {% endif %}
+            </ul>
+        </nav>
+    </div>
 {% endblock %}
