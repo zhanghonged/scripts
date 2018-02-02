@@ -3,6 +3,8 @@ from django.shortcuts import render
 from models import Article
 # 导入分页用的3个模块
 from django.core.paginator import Paginator ,EmptyPage ,PageNotAnInteger
+from django.db.models import Count
+from collections import Counter
 # Create your views here.
 
 # 扩展自定义表单分页
@@ -31,7 +33,7 @@ def Article_list(request):
         current_page = int(request.GET.get('page'))
     except:
         current_page = 1
-    # 实例化分页对象,每页6条数据,页面显示范围为6
+    # 实例化分页对象,每页6条数据,页面显示范围为5
     paginator = CustomPaginator(current_page,5,cus_list,6)
     try:
         # 取对象的当前页分页对象
@@ -65,3 +67,39 @@ def Article_content(request,article_id):
         after_page = article_list[situ+1]
 
     return render(request,'article.html',{'article':article,'before_page':before_page,'after_page':after_page})
+
+def categories(request):
+    if request.GET.get('c'):
+        c = request.GET.get('c')
+        title = '分类|'+ str(c)
+        article_obj = Article.objects.filter(category=c)
+        header = '%s 分类'%str(c)
+        return render(request,'archives.html',{'article_obj':article_obj,'title':title,'header':header})
+    else:
+        title = '文章分类'
+        # postsAll = Article.objects.annotate(num_comment=Count('id'))
+        postsAll = Article.objects.all()
+        categ = [str(p.category) for p in postsAll if str(p.category) != '']
+        categ_dict = Counter(categ)
+        return render(request,'categories.html',{'categ_dict':categ_dict,'title':title})
+
+def archives(request):
+    title = '归档'
+    article_obj = Article.objects.all().order_by('time').reverse()
+    header = '很好! 目前共计 %s 篇日志。 继续努力。'%len(article_obj)
+    try:
+        current_page = int(request.GET.get('page'))
+    except:
+        current_page = 1
+    # 实例化分页对象,每页15条数据,页面显示范围为5
+    paginator = CustomPaginator(current_page,5,article_obj,15)
+    try:
+        # 取对象的当前页分页对象
+        posts = paginator.page(current_page)
+    # current_page非数字时取第一页
+    except PageNotAnInteger:
+        posts = paginator.page(1)
+    # current_page空时取最后一页
+    except EmptyPage:
+        posts = paginator.page(paginator.num_pages)
+    return render(request,'archives.html',{'posts':posts,'title':title,'header':header})

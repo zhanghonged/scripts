@@ -1,0 +1,74 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% block title %}
+    {{ title }}
+{% endblock %}
+
+{% block content %}
+    <div class="panel-heading">
+        <h3>{{ header }}</h3>
+    </div>
+
+    <div class="panel-body">
+        <div class="list-group">
+            {% if posts.object_list %}
+                {% for row in posts.object_list %}
+                    <div class="list-group-item" href="{% url 'cont' row.id %}">
+                        {{ row.time |  date:'y-m-d' }} |&nbsp;&nbsp;&nbsp;&nbsp;
+                        <a href="{% url 'cont' row.id %}">{{ row.title }}</a>
+                    </div>
+                {% endfor %}
+            {% else %}
+                {% for row in article_obj %}
+                    <div class="list-group-item" href="{% url 'cont' row.id %}">
+                        {{ row.time |  date:'y-m-d' }} |&nbsp;&nbsp;&nbsp;&nbsp;
+                        <a href="{% url 'cont' row.id %}">{{ row.title }}</a>
+                    </div>
+                {% endfor %}
+            {% endif %}
+        </div>
+    </div>
+
+    <!--分页信息-->
+    <div class="mypagination">
+        <nav aria-label="Page navigation">
+            <ul class="pagination">
+                {% if posts.has_previous %}
+                    <li>
+                        <a href="?page={{ posts.previous_page_number }}" aria-label="Previous">
+                            <span aria-hidden="true">&laquo;</span>
+                        </a>
+                    </li>
+                {% else %}
+                    <li class="disabled">
+                        <a href="#" aria-label="Previous">
+                            <span aria-hidden="true">&laquo;</span>
+                        </a>
+                    </li>
+                {% endif %}
+
+                {% for pg in posts.paginator.pager_num_range %}
+                    {% if posts.number == pg %}
+                        <li class="active"><a href="?page={{ pg }}">{{ pg }}</a></li>
+                    {% else %}
+                        <li><a href="?page={{ pg }}">{{ pg }}</a></li>
+                    {% endif %}
+                {% endfor %}
+
+                {% if posts.has_next %}
+                    <li>
+                        <a href="?page={{ posts.next_page_number }}" aria-label="Next">
+                            <span aria-hidden="true">&raquo;</span>
+                        </a>
+                    </li>
+                {% else %}
+                    <li class="disabled">
+                        <a href="#" aria-label="Next">
+                            <span aria-hidden="true">&raquo;</span>
+                        </a>
+                    </li>
+                {% endif %}
+            </ul>
+        </nav>
+    </div>
+{% endblock %}

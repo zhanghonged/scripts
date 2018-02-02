@@ -19,6 +19,7 @@ class Article(models.Model):
     img = models.ImageField(upload_to='images',default='images/default.jpg',verbose_name='文章图片',blank=True)
     content = RichTextUploadingField(verbose_name='文字内容',blank=True)
     description = models.TextField(verbose_name='文章描述', blank=True)
+    category = models.CharField(max_length=50, verbose_name='文章分类', blank=True)
 
     def __unicode__(self):
         return self.title

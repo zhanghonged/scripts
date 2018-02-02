@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% load myfilter %}
+{% block title %}
+    {{ title }}
+{% endblock %}
+{% block content %}
+    <ul>
+        {% for i in categ_dict %}
+            <li><a href="?c={{ i }}"><h2>{{ i }} ({{ categ_dict | key:i }})</h2></a></li>
+        {% endfor %}
+    </ul>
+{% endblock %}
+
