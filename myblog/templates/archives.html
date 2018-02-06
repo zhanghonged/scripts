@@ -13,14 +13,14 @@
         <div class="list-group">
             {% if posts.object_list %}
                 {% for row in posts.object_list %}
-                    <div class="list-group-item" href="{% url 'cont' row.id %}">
+                    <div class="list-group-item article-list" href="{% url 'cont' row.id %}">
                         {{ row.time |  date:'y-m-d' }} |&nbsp;&nbsp;&nbsp;&nbsp;
                         <a href="{% url 'cont' row.id %}">{{ row.title }}</a>
                     </div>
                 {% endfor %}
             {% else %}
                 {% for row in article_obj %}
-                    <div class="list-group-item" href="{% url 'cont' row.id %}">
+                    <div class="list-group-item article-list" href="{% url 'cont' row.id %}">
                         {{ row.time |  date:'y-m-d' }} |&nbsp;&nbsp;&nbsp;&nbsp;
                         <a href="{% url 'cont' row.id %}">{{ row.title }}</a>
                     </div>

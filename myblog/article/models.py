@@ -20,9 +20,16 @@ class Article(models.Model):
     content = RichTextUploadingField(verbose_name='文字内容',blank=True)
     description = models.TextField(verbose_name='文章描述', blank=True)
     category = models.CharField(max_length=50, verbose_name='文章分类', blank=True)
+    tags = models.ManyToManyField('Tag',verbose_name='标签集合',blank=True)
 
     def __unicode__(self):
         return self.title
+
+class Tag(models.Model):
+    name = models.CharField('标签名',max_length=20)
+    create_time = models.DateTimeField('创建时间',auto_now_add=True)
+    def __unicode__(self):
+        return self.name
 
 class Author(models.Model):
     #必填字段

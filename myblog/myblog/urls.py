@@ -25,6 +25,7 @@ urlpatterns = [
     url(r'^article/(\d+)',views.Article_content,name='cont'),
     url(r'^categories/',views.categories,name='categories'),
     url(r'^archives',views.archives,name='archives'),
+    url(r'^tags',views.tags,name='tags'),
     url(r'ckeditory/',include('ckeditor_uploader.urls')),
 
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

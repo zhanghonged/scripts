@@ -1,6 +1,6 @@
 #coding:utf-8
 from django.shortcuts import render
-from models import Article
+from models import Article,Tag
 # 导入分页用的3个模块
 from django.core.paginator import Paginator ,EmptyPage ,PageNotAnInteger
 from django.db.models import Count
@@ -103,3 +103,21 @@ def archives(request):
     except EmptyPage:
         posts = paginator.page(paginator.num_pages)
     return render(request,'archives.html',{'posts':posts,'title':title,'header':header})
+
+def tags(request):
+    """
+    实现标签功能
+    根据指定标签获取标签下的全部文章
+    :param request:
+    :return:
+    """
+    if request.GET.get('tag'):
+        tag = request.GET.get('tag').encode('utf8')
+        title = '标签|'+ tag
+        header = '%s 标签' %tag
+        article_obj = Article.objects.filter(tags__name=tag)
+        return render(request,'archives.html',{'header':header,'title':title,'article_obj':article_obj})
+    else:
+        title = '标签'
+        tags_list = Tag.objects.all()
+        return render(request,'tags.html',{'title':title,'tags_list':tags_list})

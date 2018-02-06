@@ -9,5 +9,8 @@ class ArticleAdmin(admin.ModelAdmin):
 class AuthorAdmin(admin.ModelAdmin):
     list_display = ('name','age','gender')
 
+class TagAdmin(admin.ModelAdmin):
+    list_display = ('name','create_time')
 admin.site.register(Article,ArticleAdmin)
 admin.site.register(Author,AuthorAdmin)
+admin.site.register(Tag,TagAdmin)
