@@ -1,0 +1,70 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+{% block label %}
+    用户列表
+{% endblock %}
+
+{% block style %}
+    <link rel="stylesheet" href="{% static 'bootstrapvalidator/css/bootstrapValidator.min.css' %}">
+    <script src="{% static 'jquery/jquery-1.10.1.js' %}"></script>
+{#    <script src="{% static 'bootstrap/js/bootstrap-modal.js' %}"></script>#}
+    <script src="{% static 'bootstrapvalidator/js/bootstrapValidator.min.js' %}"></script>
+    <script src="{% static 'my/js/user.js' %}"></script>
+{% endblock %}
+
+{% block content %}
+
+    <div class="row">
+        <div class="col-lg-10">
+            <!--模态框开始-->
+            <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#ourRegister">
+                添加用户
+            </button>
+
+            <div class="modal fade" id="ourRegister" tabindex="-1" role="dialog" aria-labelledby="ourRegisterModal">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header pannel-heading">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                            <h4 class="modal-title" id="ourRegisterTitle">用户注册</h4>
+                        </div>
+                        <div class="panel-body">
+                            <form class="registerForm" id="registerform" method="post" enctype="multipart/form-data"
+                                  action="{% url 'user_list' %}">
+                                {% csrf_token %}
+                                <div class="modal-body">
+                                    <div class="form-group">
+                                        <label class="control-label">{{ register.username.label }}</label>
+                                        {{ register.username }}
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="control-label">{{ register.password.label }}</label>
+                                        {{ register.password }}
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="control-label">{{ register.phone.label }}</label>
+                                        {{ register.phone }}
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="control-label">{{ register.photo.label }}</label>
+                                        {{ register.photo }}
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="control-label">{{ register.email.label }}</label>
+                                        {{ register.email }}
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <div class="form-group">
+                                        <button type="submit" class="btn btn-primary">提交</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--模态框结束-->
+        </div>
+    </div>
+{% endblock %}
