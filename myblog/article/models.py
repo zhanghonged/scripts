@@ -3,14 +3,6 @@ from django.db import models
 from ckeditor_uploader.fields import RichTextUploadingField
 
 # Create your models here.
-# class Article(models.Model):
-#     title = models.CharField(max_length=64,verbose_name='标题')
-#     author = models.CharField(max_length=32,verbose_name='作者')
-#     time = models.DateTimeField(auto_now=True,verbose_name='发表时间')
-#     content = models.TextField('文章内容')
-#
-#     def __unicode__(self):
-#         return self.title
 
 class Article(models.Model):
     title = models.CharField(max_length=64,verbose_name='文章标题')
@@ -24,6 +16,12 @@ class Article(models.Model):
 
     def __unicode__(self):
         return self.title
+
+class Category(models.Model):
+    name = models.CharField('文章分类',max_length=32)
+    create_time = models.DateTimeField('创建时间',auto_now_add=True)
+    def __unicode__(self):
+        return self
 
 class Tag(models.Model):
     name = models.CharField('标签名',max_length=20)
