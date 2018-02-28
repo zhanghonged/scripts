@@ -1,8 +1,9 @@
 #coding:utf-8
+import hashlib
 from django.shortcuts import render
 from forms import Register
 from models import User
-from django.http import JsonResponse
+from django.http import JsonResponse, HttpResponseRedirect
 # Create your views here.
 
 def userValid(request):
@@ -47,11 +48,42 @@ def emailValid(request):
                 result['valid'] = True
     return JsonResponse(result)
 
-def loginValid(request,*args,**kwargs):
-    pass
+def loginValid(fun):
+    '''
+    验证用户登录状态
+    '''
+    def inner(request, *args, **kwargs):
+        c_phone = request.COOKIES.get('phone')
+        s_phone = request.session.get('phone')
+        if c_phone and c_phone == s_phone:
+            return fun(request,*args, **kwargs)
+        else:
+            return HttpResponseRedirect('/login')
+    return inner
 
 def login(request):
-    pass
+    if request.method == 'POST':
+        phone = request.POST.get('phone')
+        password = request.POST.get('password')
+        valid_remember = request.POST.get('valide')
+        cookie_remember = request.COOKIES.get('key')
+        if valid_remember == cookie_remember:
+            try:
+                u = User.objects.get(phone = phone)
+            except:
+                return HttpResponseRedirect('/login')
+            else:
+                post_password = getmd5(password)
+                if post_password == u.password:
+                    response = HttpResponseRedirect('/index')
+                    response.set_cookie('phone', u.phone)
+                    request.session['phone'] = u.phone
+                    return response
+                else:
+                    return HttpResponseRedirect('/login')
+        else:
+            return HttpResponseRedirect('/login')
+    return HttpResponseRedirect('/login')
 
 def logout(request):
     pass
@@ -59,16 +91,27 @@ def logout(request):
 def register(request):
     pass
 
+def getmd5(password):
+    '''
+    密码加密
+    '''
+    md5 = hashlib.md5()
+    md5.update(password)
+    return md5.hexdigest()
+
 def user_list(request):
+    '''
+    用户注册
+    '''
     register = Register
     if request.method == 'POST':
         obj = Register(request.POST,request.FILES)
         if obj.is_valid():
             print '表单校验成功:',obj.cleaned_data
-            photo = obj.cleaned_data['photo']
-            print photo
-            print type(photo)
-            User.objects.create(**obj.cleaned_data)
+            user_data = obj.cleaned_data
+            user_data['password'] = getmd5(user_data['password'])
+            print user_data['password']
+            User.objects.create(**user_data)
         else:
             print '校验失败:',obj.errors
     return render(request,'userList.html',locals())

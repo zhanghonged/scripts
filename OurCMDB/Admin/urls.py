@@ -7,4 +7,5 @@ urlpatterns = [
     url(r'^userValid/$', userValid, name='userValid'),
     url(r'^phoneValid/$', phoneValid, name='phoneValid'),
     url(r'^emailValid/$', emailValid, name='emailValid'),
+    url(r'login/$',login, name='login'),
 ]
