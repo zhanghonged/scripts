@@ -19,6 +19,7 @@ from views import *
 urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
     url(r'^user/', include('Admin.urls')),
+    url(r'^eq/', include('Equipment.urls')),
     url(r'^$',index),
     url(r'^index/$',index),
     url(r'^login/$',login),
