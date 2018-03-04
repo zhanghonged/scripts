@@ -4,10 +4,32 @@ from django.shortcuts import render
 from django.http import JsonResponse
 from django.views.decorators.csrf import csrf_exempt
 from models import *
+from OurCMDB.views import getpage
 
 # Create your views here.
 def eq_list(request):
-    return render(request,'equipmentList.html')
+    if request.method == 'GET':
+        page = request.GET.get('page')
+        num = request.GET.get('num')
+        sql = 'select * from Equipment_equipment'
+        if page and num:
+            result = getpage(sql=sql, page=page,num=num)
+        elif page:
+            result = getpage(sql=sql,page=page)
+        else:
+            result = {
+                'page_data': '',
+                'page_range': ''
+            }
+    else:
+        result = {
+            'page_data': '',
+            'page_range': ''
+        }
+    return JsonResponse(result)
+def eq_list_page(request):
+    eq_list = Equipment.objects.all()
+    return render(request,'equipmentList.html',locals())
 
 def eq_connect(request):
     '''
@@ -62,14 +84,7 @@ def eq_connect(request):
         result['data'] = '添加失败'
     return JsonResponse(result)
 
-def eq_add(request):
-    pass
 
-def eq_drop(request):
-    pass
-
-def eq_alter(request):
-    pass
 
 @csrf_exempt
 def eq_save(request):
@@ -85,3 +100,20 @@ def eq_save(request):
         equipment.mac = mac
         equipment.save()
     return JsonResponse({'state':'this only a test'})
+
+
+
+# import random
+# def eq_add(request):
+#     for i in range(100):
+#         e = Equipment()
+#         e.hostname = 'localhost_%s'%i
+#         e.ip = '192.168.1.%s'%(i+2)
+#         e.system = random.choice(['win7_32','win7_64','centos_6.5_x86','centos_6.5_x64','centos_7.4_x64','ubuntu','suse'])
+#         e.status = random.choice(['True','False'])
+#         e.mac = random.choice(['00:0c:29:92:f1:28','10:0c:29:92:f1:28','11:0c:29:92:f2:28','2b:0c:29:92:f1:28'])
+#         e.username = random.choice(['root','admin','guset'])
+#         e.password = '123'
+#         e.port = 22
+#         e.save()
+#     return JsonResponse({'status':'true'})

@@ -1,0 +1,213 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+{% block title %}
+    设备管理页
+{% endblock %}
+
+{% block label %}
+    设备管理
+{% endblock %}
+
+{% block style %}
+    <script src="{% static 'jquery/jquery-1.10.1.js' %}"></script>
+    <script src="{% static 'vue/vue.min.js' %}"></script>
+{% endblock %}
+
+{% block content %}
+    <!--设备添加部分-->
+    <div class="row">
+        <div class="col-lg-11">
+            <!--模态框开始-->
+            <button type="button" class="btn btn-primary btn-lg navbar-right" data-toggle="modal"
+                    data-target="#addEq">
+                添加设备
+            </button>
+
+            <div class="modal fade" id="addEq" tabindex="-1" role="dialog" aria-labelledby="addEqModal">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header pannel-heading">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                                &times;
+                            </button>
+                            <h4 class="modal-title" id="addEqTitle">设备添加</h4>
+                        </div>
+                        <div class="panel-body">
+                            <div class="modal-body">
+                                <form id="addEqForm" class="form-horizontal">
+                                    <div class="form-group">
+                                        <label for="ip" class="control-label col-sm-2">IP地址</label>
+                                        <div class="col-sm-10">
+                                            <input class="form-control" type="text" name="ip" id="ip">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="port" class="control-label col-sm-2">端口</label>
+                                        <div class="col-sm-10">
+                                            <input class="form-control" type="text" name="port" id="port">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="username" class="control-label col-sm-2">用户名</label>
+                                        <div class="col-sm-10">
+                                            <input class="form-control" type="text" name="username"
+                                                   id="username">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="password" class="control-label col-sm-2">密码</label>
+                                        <div class="col-sm-10">
+                                            <input class="form-control" type="password" name="password"
+                                                   id="password">
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                            <button id="eqSubmit" type="button" class="btn btn-success" data-dismiss="modal">
+                                提交
+                            </button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <!--模态框结束-->
+        </div>
+    </div>
+    <br>
+    <!--设备展示部分-->
+    <div class="row">
+        <div class="col-lg-12">
+            <table width="100%" class="table table-striped table-bordered table-hover" id="dataTables-example">
+                <thead>
+                <tr>
+                    <th>序号</th>
+                    <th>IP</th>
+                    <th>用户名</th>
+                    <th>连接状态</th>
+                    <th>系统</th>
+                    <th>主机名</th>
+                    <th>MAC地址</th>
+                </tr>
+                </thead>
+                {% verbatim myblock %}
+                <tbody id="app">
+                <tr class="odd gradeX" v-for = 'eq in data_list'>
+                    <td>{{ eq.id }}</td>
+                    <td>{{ eq.ip }}</td>
+                    <td>{{ eq.username }}</td>
+                    <td>{{ eq.statue }}</td>
+                    <td>{{ eq.system }}</td>
+                    <td>{{ eq.hostname }}</td>
+                    <td>{{ eq.mac }}</td>
+                </tr>
+                {% endverbatim myblock %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script>
+        var data_list = [
+            {
+                id:'2',
+                ip:'192.168.3.6',
+                username:'root',
+                statue:'True',
+                system:'win7',
+                hostname:'aaa',
+                mac:'10:C3:7B:DC:FF:07'
+            },
+            {
+                id:'3',
+                ip:'192.168.3.6',
+                username:'root',
+                statue:'True',
+                system:'win7',
+                hostname:'aaa',
+                mac:'10:C3:7B:DC:FF:07'
+            },
+            {
+                id:'4',
+                ip:'192.168.3.6',
+                username:'root',
+                statue:'True',
+                system:'win7',
+                hostname:'aaa',
+                mac:'10:C3:7B:DC:FF:07'
+            },
+            {
+                id:'5',
+                ip:'192.168.3.6',
+                username:'root',
+                statue:'True',
+                system:'win7',
+                hostname:'aaa',
+                mac:'10:C3:7B:DC:FF:07'
+            },
+            {
+                id:'6',
+                ip:'192.168.3.6',
+                username:'root',
+                statue:'True',
+                system:'win7',
+                hostname:'aaa',
+                mac:'10:C3:7B:DC:FF:07'
+            }
+        ];
+        new Vue(
+            {
+                el: '#app',
+                data: data_list
+            }
+        )
+    </script>
+
+    <script>
+        function getConnect() {
+            data = $('#addEqForm').serializeArray(); //获取表单所有的input的值
+            var dict = {};
+            $.each(data, function () {
+                dict[this.name] = this.value;
+            });
+            dict['csrfmiddlewaretoken'] = '{{ csrf_token }}';
+            $.ajax({
+                url: "{% url 'eq_connect' %}",
+                type: 'post',
+                data: dict,
+                success: function (data) {
+                    console.log(data);
+                },
+                error: function (error) {
+                    console.log(error);
+                }
+            });
+        }
+        function getData() {
+            $.ajax(
+                {
+                    url: '/eq/eq_list/?page=1',
+                    type:'get',
+                    data:'',
+                    success:function (data) {
+                      console.log(data);
+                    },
+                    error:function (error) {
+                        console.log(error);
+                    }
+                }
+            )
+        }
+        $(function () {
+            getData();
+            $('#eqSubmit').click(
+                function () {
+                    getConnect();
+                }
+            )
+        })
+    </script>
+{% endblock %}

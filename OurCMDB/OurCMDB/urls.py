@@ -24,4 +24,5 @@ urlpatterns = [
     url(r'^index/$',index),
     url(r'^login/$',login),
     url(r'^logout/$',logout),
+    url(r'^test/$',getpage),
 ]
