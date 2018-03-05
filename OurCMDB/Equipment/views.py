@@ -1,11 +1,11 @@
 #coding:utf-8
+import time
 import paramiko
 from django.shortcuts import render
 from django.http import JsonResponse
 from django.views.decorators.csrf import csrf_exempt
 from models import *
 from OurCMDB.views import getpage
-
 # Create your views here.
 def eq_list(request):
     if request.method == 'GET':
@@ -27,6 +27,7 @@ def eq_list(request):
             'page_range': ''
         }
     return JsonResponse(result)
+
 def eq_list_page(request):
     eq_list = Equipment.objects.all()
     return render(request,'equipmentList.html',locals())
@@ -56,10 +57,13 @@ def eq_connect(request):
                 trans.connect(username=username,password=password)
 
                 sftp = paramiko.SFTPClient.from_transport(trans) #用于文件上传和下载的sftp服务
+                sftp = paramiko.SFTPClient.from_transport(trans)
                 ssh = paramiko.SSHClient() #远程执行命令的服务
-                ssh.get_transport = trans
+                ssh = paramiko.SSHClient()
+                ssh._transport = trans
                 #创建目录
                 stdin,stdout,stderr = ssh.exec_command('mkdir CMDBClient')
+                time.sleep(1)
                 #上传文件
                 sftp.put('sftpDir/getData.py','CMDBClient/getData.py')
                 sftp.put('sftpDir/sendData.py', 'CMDBClient/sendData.py')
@@ -67,7 +71,8 @@ def eq_connect(request):
                 #调用脚本
                 stdin,stdout,stderr = ssh.exec_command('python /root/CMDBClient/main.py')
                 trans.close()
-            except:
+            except Exception as e:
+                print e
                 equipment = Equipment.objects.get(ip = ip)
                 equipment.status = 'False'
                 result['data'] = '连接服务器失败'
@@ -93,12 +98,16 @@ def eq_save(request):
         hostname = request.POST.get('get_hostname')
         system = request.POST.get('get_system')
         mac = request.POST.get('get_mac')
-
-        equipment = Equipment.objects.get(ip = ip)
-        equipment.hostname = hostname
-        equipment.system = system
-        equipment.mac = mac
-        equipment.save()
+        print ip, type(ip)
+        try:
+            equipment = Equipment.objects.get(ip=ip)
+        except Exception ,e:
+            print e
+        else:
+            equipment.hostname = hostname
+            equipment.system = system
+            equipment.mac = mac
+            equipment.save()
     return JsonResponse({'state':'this only a test'})
 
 
