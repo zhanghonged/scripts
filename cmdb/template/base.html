@@ -33,6 +33,7 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+
     {% block style %}
     {% endblock %}
 
@@ -63,6 +64,8 @@
                     </a>
                     <ul class="dropdown-menu dropdown-user">
                         <li><a href="#"><i class="fa fa-user fa-fw"></i>用户属性</a>
+                        </li>
+                        <li><a href="#" data-toggle="modal" data-target="#userRegister"><i class="fa fa-user fa-fw"></i>添加用户</a>
                         </li>
                         <li><a href="#"><i class="fa fa-gear fa-fw"></i> 设置</a>
                         </li>
@@ -161,6 +164,24 @@
     <!-- Custom Theme JavaScript -->
     <script src="{% static 'dist/js/sb-admin-2.js' %}"></script>
 
+    <div class="modal fade" id="userRegister" tabindex="-1" role="dialog" aria-labelledby="ourRegisterModal">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content"><!--模态框内容开始-->
+                <div class="modal-header"><!--模态框标题-->
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">X</button>
+                    <h4 class="modal-title" id="ourRegisterTitle">用户注册</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="Register" id="Register">
+                        {{ register.as_p }}
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <input type="submit" class="btn btn-primary" value="提交">
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>
