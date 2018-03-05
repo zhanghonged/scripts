@@ -9,7 +9,7 @@ method_dict = getData.__dict__  # 以字典形式，对象的方法名称作为�
 result_dict = {}
 for method in method_list:
     if method.startswith('get'):
-        result_dict[method] = method_dict[method]
+        result_dict[method] = method_dict[method]()
 
 if __name__ == '__main__':
     print result_dict

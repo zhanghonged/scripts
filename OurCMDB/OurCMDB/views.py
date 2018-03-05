@@ -26,11 +26,12 @@ def logout(request):
         request.session.flush()
     return HttpResponseRedirect('/login')
 
-def getpage(sql,page,num = 10):
+def getpage(sql,page,num = 10,maxpage_num = 7):
     '''
     :param sql:每次查询的语句
     :param page: 当前的页码
     :param num: 每页数据的条数
+    :param maxpage_num: 分页区域显示的页码数量
     :return: 查询出来的数据
     '''
     #查询当前页码的数据
@@ -57,9 +58,22 @@ def getpage(sql,page,num = 10):
     else:
         page_total = nums/num +1
 
+    #最多显示页码范围
+    part = maxpage_num/2
+    if page_total < maxpage_num:
+        page_range = [i for i in range(1,page_total+1)]
+    elif page <= part:
+        page_range = [i for i in range(1,maxpage_num+1)]
+    elif page + part > page_total:
+        page_range = [i for i in range(page_total-maxpage_num,page_total+1)]
+    else:
+        page_range = [i for i in range(page-part,page+part+1)]
+
     result = {
         'page_data':data_list,
-        'page_range':range(1,page_total+1)
+        'page_range':page_range,
+        'current_page':page,
+        'max_page':page_total
     }
     return result
 

@@ -5,7 +5,7 @@ import urllib, urllib2
 
 
 def sendData(data):
-    url = ''
+    url = 'http://192.168.1.222:8000/eq/eq_save'
     headers = {
         "user-agent": "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36"}
     sendData = urllib.urlencode(data)  # urlencode 是用来将请求数据封装成为json格式
