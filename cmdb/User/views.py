@@ -1,12 +1,16 @@
 #coding:utf-8
 import hashlib
-from django.shortcuts import render
+from django.shortcuts import render, render_to_response
 from django.http import JsonResponse
 from forms import Register
 from models import CMDBUser
 from django.views.decorators.csrf import csrf_exempt
 
 # Create your views here.
+def index(request):
+    return render_to_response('index.html')
+
+
 def user_list(request):
     register = Register
     return render(request,'userlist.html',locals())
@@ -46,14 +50,15 @@ def user_save(request):
     result = {'status':'error','data':''}
     if request.method == 'POST':
         register = Register
-        obj = Register(request.POST)
+        obj = Register(request.POST,request.FILES)
         if obj.is_valid():
             print '表单校验成功:',obj.cleaned_data
             username = obj.cleaned_data['username']
             password = getmd5(obj.cleaned_data['password'])
+            photo = obj.cleaned_data['photo']
             # 入库
             try:
-                CMDBUser.objects.create(username=username,password=password)
+                CMDBUser.objects.create(username=username,password=password,photo=photo)
             except Exception as e:
                 print e
                 result['data'] = '注册失败'

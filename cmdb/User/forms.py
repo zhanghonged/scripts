@@ -17,6 +17,9 @@ class Register(forms.Form):
         label='密码',
         widget=forms.PasswordInput(attrs={'class':'form-control','placeholder':'密码'})
     )
+    photo = forms.ImageField(
+        label='头像'
+    )
 
     def clean_username(self):
         username = self.cleaned_data.get('username')
