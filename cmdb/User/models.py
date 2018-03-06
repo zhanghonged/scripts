@@ -4,9 +4,9 @@ from django.db import models
 class CMDBUser(models.Model):
     username = models.CharField(max_length=32,verbose_name='用户名')
     password = models.CharField(max_length=32,verbose_name='密码')
-    email = models.EmailField(verbose_name='邮箱')
-    phone = models.CharField(max_length=32,verbose_name='手机号')
-    photo = models.ImageField(upload_to='images',verbose_name='头像')
+    email = models.EmailField(verbose_name='邮箱',blank=True,null=True)
+    phone = models.CharField(max_length=32,verbose_name='手机号',blank=True,null=True)
+    photo = models.ImageField(upload_to='images',verbose_name='头像',blank=True,null=True)
     #ImageField 必须在安装pil或pillow的基础上使用
     def __unicode__(self):
         return self.username
