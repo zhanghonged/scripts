@@ -30,9 +30,9 @@
     <!-- bootstrapValidator CSS -->
     <link rel="stylesheet" href="{% static 'bootstrapvalidator/css/bootstrapValidator.min.css' %}">
 
-    <link rel="stylesheet" href="{% static 'bootstrap-notify/css/styles/alert-blackgloss.css' %}">
-    <link rel="stylesheet" href="{% static 'bootstrap-notify/css/styles/alert-bangtidy.css' %}">
+    <!-- bootstrap-notify CSS -->
     <link rel="stylesheet" href="{% static 'bootstrap-notify/css/bootstrap-notify.css' %}">
+
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -59,7 +59,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#">宙合CMDB v1.0</a>
+                <a class="navbar-brand" href="{% url 'index' %}">宙合CMDB v1.0</a>
             </div>
             <!-- /.navbar-header -->
 
@@ -70,7 +70,7 @@
                         <i class="fa fa-user fa-fw"></i> <i class="fa fa-caret-down"></i>
                     </a>
                     <ul class="dropdown-menu dropdown-user">
-                        <li><a href="#"><i class="fa fa-gear fa-fw"></i> 个人设置</a>
+                        <li><a href="#" data-toggle="modal" data-target="#userSet"><i  class="fa fa-gear fa-fw"></i> 个人设置</a>
                         </li>
                         <li class="divider"></li>
                         <li><a href="#"><i class="fa fa-sign-out fa-fw"></i>登出</a>
@@ -160,6 +160,42 @@
 
     </div>
     <!-- /#wrapper -->
+    <!--模态框--修改用户属性--开始-->
+    <div class="modal fade" id="userSet" tabindex="-1" role="dialog" aria-labelledby="userSet">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content"><!--模态框内容开始-->
+                        <div class="modal-header"><!--模态框标题-->
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">X</button>
+                            <h4 class="modal-title" id="ourRegisterTitle">个人设置</h4>
+                        </div>
+                        <div class="modal-body">
+                            <form class="mysettings" id="mysettings" enctype="multipart/form-data">
+                                <div class="form-group">
+                                    <label class="control-label">用户名</label>
+                                    
+                                </div>
+                                <div class="form-group">
+                                    <label class="control-label">手机</label>
+                                    <input class="form-control" id="id_phone" maxlength="11" minlength="11" name="phone" placeholder="手机号" type="text">
+                                </div>
+                                <div class="form-group">
+                                    <label class="control-label">邮箱</label>
+                                    <input class="form-control" id="id_mail" name="mail" placeholder="邮箱" type="text">
+                                </div>
+                                <div class="form-group">
+                                    <label class="control-label">头像</label>
+                                    <input id="id_photo" name="photo" placeholder="头像" type="file">
+                                </div>
+                            </form>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                                <button id="userSetSubmit" class="btn btn-primary" data-dismiss="modal">提交</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    <!--模态框--结束>
 
     <!-- jQuery -->
     <script src="{% static 'jquery/jquery-1.10.1.js' %}"></script>
@@ -176,7 +212,40 @@
     <!-- Custom bootstrapValidator JavaScript -->
     <script src="{% static 'bootstrapvalidator/js/bootstrapValidator.min.js' %}"></script>
 
+    <!-- bootstrap-notify JavaScript -->
     <script src="{% static 'bootstrap-notify/js/bootstrap-notify.js' %}"></script>
+
+    <script src="{% static 'vue/vue.min.js' %}"></script>
+    <script src="{% static 'vue/vue-resource.js' %}"></script>
+    <script>
+        function usersetting() {
+            var sendData = new FormData();
+            sendData.append('phone',$('#id_phone').val());
+            sendData.append('email',$('#id_email').val());
+            sendData.append('photo',$('#id_photo')[0].files[0]);
+            sendData.append('csrfmiddlewaretoken','{{ csrf_token }}')
+
+            $.ajax({
+                url:'{% url 'user_setting' %}',
+                type:'post',
+                data:{"phone":"zhanghong",'csrfmiddlewaretoken':'{{ csrf_token }}'},
+                //processData:false,  //告诉jQuery不要去处理发送的数据
+                //contentType:false,  //告诉jQuery不要去处理Content-Type请求头
+                success:function (data) {
+                    console.log(data);
+                },
+                error:function (error) {
+                    console.log(error);
+                }
+            })
+        }
+
+        $(function () {
+            $('#userSetSubmit').click(function () {
+                usersetting();
+            })
+        })
+    </script>
 </body>
 
 </html>

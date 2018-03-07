@@ -1,19 +1,53 @@
 #coding:utf-8
 import hashlib
 from django.shortcuts import render, render_to_response
-from django.http import JsonResponse
-from forms import Register
+from django.http import JsonResponse, HttpResponseRedirect
+from forms import Register, UserSetting
 from models import CMDBUser
+from cmdb.views import getpage
 from django.views.decorators.csrf import csrf_exempt
 
 # Create your views here.
 def index(request):
-    return render_to_response('index.html')
-
+    return render(request,'index.html')
 
 def user_list(request):
+    '''
+    :param request:
+    :return: 用户管理页
+    '''
     register = Register
     return render(request,'userlist.html',locals())
+
+def user_list_data(request):
+    '''
+    从数据库查询分页用户数据
+    :param request:
+    :return:json类型用户分页数据
+    '''
+    if request.method == 'GET':
+        page = request.GET.get('page')
+        num = request.GET.get('num')
+        sql = 'select * from User_cmdbuser'
+        if page and num:
+            result = getpage(sql,page,num)
+        elif page:
+            result = getpage(sql,page)
+        else:
+            result = {
+                'page_data': '',
+                'page_range': '',
+                'current_page': '',
+                'max_page': ''
+            }
+    else:
+        result = {
+            'page_data': '',
+            'page_range': '',
+            'current_page': '',
+            'max_page': ''
+        }
+    return JsonResponse(result)
 
 def userValid(request):
     '''
@@ -49,16 +83,14 @@ def user_save(request):
     '''
     result = {'status':'error','data':''}
     if request.method == 'POST':
-        register = Register
-        obj = Register(request.POST,request.FILES)
+        obj = Register(request.POST)
         if obj.is_valid():
             print '表单校验成功:',obj.cleaned_data
             username = obj.cleaned_data['username']
             password = getmd5(obj.cleaned_data['password'])
-            photo = obj.cleaned_data['photo']
             # 入库
             try:
-                CMDBUser.objects.create(username=username,password=password,photo=photo)
+                CMDBUser.objects.create(username=username,password=password)
             except Exception as e:
                 print e
                 result['data'] = '注册失败'
@@ -69,5 +101,43 @@ def user_save(request):
         else:
             print '表单校验失败:',obj.errors
             result['data'] = '注册失败'
-    print result
     return JsonResponse(result)
+
+def user_setting(request):
+    '''
+    用户个人设置
+    :param request:
+    :return:
+    '''
+    result = {'status':'error','data':''}
+    if request.method == 'POST':
+        phone = request.POST.get('phone'),
+        #email = request.POST.get('email')
+        uid = request.COOKIES.get('id')
+        print uid
+    return JsonResponse({'status':'aaa'})
+
+
+def login(request):
+    '''
+    登录验证
+    :param request:
+    :return:
+    '''
+    if request.method == 'POST':
+        username = request.POST.get('username')
+        password = request.POST.get('password')
+        print username,password
+        try:
+            user = CMDBUser.objects.get(username=username)
+        except:
+            return HttpResponseRedirect('/login/')
+        else:
+            if user.password == getmd5(password):
+                response = HttpResponseRedirect('/')
+                response.set_cookie('id',user.id)
+                request.session['isLogin'] = True
+                return response
+            else:
+                return HttpResponseRedirect('/login/')
+    return HttpResponseRedirect('/login/')
