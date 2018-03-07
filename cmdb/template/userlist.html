@@ -30,6 +30,9 @@
                                 message: {text: data.data},
                                 type: "success"
                             }).show();
+                            //清空表单值
+                            $('#id_username').val('');
+                            $('#id_password').val('');
                             $(location).attr('href', '{% url 'user_list' %}');
                         } else {
                             $('.top-right').notify({

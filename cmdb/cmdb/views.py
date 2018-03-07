@@ -1,13 +1,23 @@
 #coding:utf-8
-from django.shortcuts import render_to_response,render
+import random
+from django.shortcuts import render, HttpResponseRedirect
 from django.db import connection
 
-
+content = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890abcdefghijklmnopqrstuvwxyz'
 def base(request):
     return render(request,'base.html',locals())
 
 def login(request):
-    return render(request, 'login.html')
+    '''
+    登录页面，随机生成字符串设置cookie并传到前端页面
+    :param request:
+    :return:
+    '''
+    v_data = "".join(random.sample(content, 28))
+    # 将v_data传到前端页面
+    response =  render(request, 'login.html',{'v_data':v_data})
+    response.set_cookie('token',v_data)
+    return response
 
 def getpage(sql, page, num = 3, maxpage_num = 7):
     '''
@@ -61,3 +71,17 @@ def getpage(sql, page, num = 3, maxpage_num = 7):
         'max_page':page_total
     }
     return result
+
+def loginValid(fun):
+    '''
+    cookie校验装饰器
+    :param request:
+    :return:
+    '''
+    def inner(request, *args, **kwargs):
+        is_login = request.COOKIES.get('isLogin')
+        if is_login:
+            return fun(request, *args, **kwargs)
+        else:
+            return HttpResponseRedirect('/login')
+    return inner

@@ -4,10 +4,11 @@ from django.shortcuts import render, render_to_response
 from django.http import JsonResponse, HttpResponseRedirect
 from forms import Register, UserSetting
 from models import CMDBUser
-from cmdb.views import getpage
+from cmdb.views import getpage ,loginValid
 from django.views.decorators.csrf import csrf_exempt
 
 # Create your views here.
+@loginValid
 def index(request):
     return render(request,'index.html')
 
@@ -127,17 +128,23 @@ def login(request):
     if request.method == 'POST':
         username = request.POST.get('username')
         password = request.POST.get('password')
-        print username,password
-        try:
-            user = CMDBUser.objects.get(username=username)
-        except:
-            return HttpResponseRedirect('/login/')
-        else:
-            if user.password == getmd5(password):
-                response = HttpResponseRedirect('/')
-                response.set_cookie('id',user.id)
-                request.session['isLogin'] = True
-                return response
-            else:
+        loginvalid = request.POST.get('loginvalid')
+        token_cookie = request.COOKIES.get('token')
+
+        # 判断前端页面的值与token_cookie的值是否相同，这是一种反爬手段
+        if loginvalid == token_cookie:
+            try:
+                user = CMDBUser.objects.get(username=username)
+            except:
                 return HttpResponseRedirect('/login/')
+            else:
+                if user.password == getmd5(password):
+                    response = HttpResponseRedirect('/')
+                    response.set_cookie('id',user.id)
+                    request.session['isLogin'] = True
+                    return response
+                else:
+                    return HttpResponseRedirect('/login/')
+        else:
+            return HttpResponseRedirect('/login/')
     return HttpResponseRedirect('/login/')

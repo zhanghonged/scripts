@@ -43,7 +43,7 @@
                         <h3 class="panel-title">请登录</h3>
                     </div>
                     <div class="panel-body">
-                        <form role="form" action="/user/login/" method="post">
+                        <form role="form" action="{% url 'loginAuth' %}" method="post">
                             {% csrf_token %}
                             <fieldset>
                                 <div class="form-group">
@@ -51,6 +51,10 @@
                                 </div>
                                 <div class="form-group">
                                     <input class="form-control" placeholder="密码" name="password" type="password" value="">
+                                </div>
+                                <!--隐藏表单内容，用于传到后台与cookie对比，一种反爬手段-->
+                                <div class="form-group">
+                                    <input class="form-control" name="loginvalid" type="hidden" value="{{ v_data }}">
                                 </div>
                                 <div class="checkbox">
                                     <label>
