@@ -48,23 +48,17 @@ class UserSetting(forms.Form):
         max_length = 11,
         min_length = 11,
         label = '手机号',
+        required = False,
         widget = forms.TextInput(attrs={'class':'form-control','placeholder':'手机号'})
     )
     email = forms.EmailField(
-        label = '邮箱'
+        label = '邮箱',
+        required = False
     )
-    def clean_phone(self):
-        '''
-        检查手机号是否重复
-        :return:
-        '''
-        phone = self.cleaned_data.get('phone')
-        try:
-            user = CMDBUser.objects.get(phone=phone)
-        except:
-            return phone
-        else:
-            raise ValidationError('手机号已存在')
+    photo = forms.ImageField(
+        label = '头像',
+        required = False
+    )
     def clean_email(self):
         '''
         检测邮箱格式及是否重复
@@ -73,11 +67,34 @@ class UserSetting(forms.Form):
         email = self.cleaned_data.get('email')
         res = re.match(r"\w+@\w+\.\w+",email)
         if res:
-            try:
-                user = CMDBUser.objects.get('mail')
-            except:
-                return email
-            else:
-                raise ValidationError('邮箱已存在')
+            return email
         else:
             raise ValidationError('请输入正确邮箱')
+    # def clean_email(self):
+    #     '''
+    #     检测邮箱格式及是否重复
+    #     :return:
+    #     '''
+    #     email = self.cleaned_data.get('email')
+    #     res = re.match(r"\w+@\w+\.\w+",email)
+    #     if res:
+    #         try:
+    #             user = CMDBUser.objects.get(email = email)
+    #         except:
+    #             return email
+    #         else:
+    #             raise ValidationError('邮箱已存在')
+    #     else:
+    #         raise ValidationError('请输入正确邮箱')
+    # def clean_phone(self):
+    #     '''
+    #     检查手机号是否重复
+    #     :return:
+    #     '''
+    #     phone = self.cleaned_data.get('phone')
+    #     try:
+    #         user = CMDBUser.objects.get(phone=phone)
+    #     except:
+    #         return phone
+    #     else:
+    #         raise ValidationError('手机号已存在')

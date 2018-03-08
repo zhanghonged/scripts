@@ -1,6 +1,7 @@
 #coding:utf-8
 import hashlib
-from django.shortcuts import render, render_to_response
+from PIL import Image
+from django.shortcuts import render, redirect
 from django.http import JsonResponse, HttpResponseRedirect
 from forms import Register, UserSetting
 from models import CMDBUser
@@ -10,7 +11,9 @@ from django.views.decorators.csrf import csrf_exempt
 # Create your views here.
 @loginValid
 def index(request):
-    return render(request,'index.html')
+    uid = request.COOKIES.get('id')
+    user = CMDBUser.objects.get(id = uid)
+    return render(request,'index.html',{'user':user})
 
 def user_list(request):
     '''
@@ -112,11 +115,55 @@ def user_setting(request):
     '''
     result = {'status':'error','data':''}
     if request.method == 'POST':
-        phone = request.POST.get('phone'),
-        #email = request.POST.get('email')
+        #把ajax 传过来的POST和FILES传给表单去校验，这样图片文件就可以向普通字段那样直接入库，并自动保存文件到服务器
+        # 如果不经过表单处理，则图片文件需要手动处理
+        # 处理图片信息
+        #from PIL import Image
+        # photo = request.FILES.get('photo')
+        # name = 'static/images/' + photo.name
+        # #保存图片
+        # img = Image.open(photo)
+        # img.save(name)
+        #在cookie中获取用户id
         uid = request.COOKIES.get('id')
-        print uid
-    return JsonResponse({'status':'aaa'})
+        obj = UserSetting(request.POST,request.FILES)
+        if obj.is_valid():
+            #print '校验成功：',obj.cleaned_data
+            phone = obj.cleaned_data['phone']
+            email = obj.cleaned_data['email']
+            photo = obj.cleaned_data['photo']
+
+            #判断电话是否已存在
+            user_list = CMDBUser.objects.filter(phone=phone).exclude(id = uid)
+            #除此用户外其他用户已经存在此手机号
+            if len(user_list) > 0:
+                result['data'] = '手机号已存在'
+            else:
+
+                user_list_1 = CMDBUser.objects.filter(email=email).exclude(id=uid)
+                # 除此用户外其他用户已经存在此邮箱
+                if len(user_list_1) > 0:
+                    result['data'] = '邮箱已存在'
+                #开始入库
+                else:
+                    try:
+                        user = CMDBUser.objects.get(id = uid)
+                    except:
+                        result['data'] = '提交错误'
+                    else:
+                        user.phone = phone
+                        user.email = email
+                        user.photo = photo
+                        user.save()
+                        result['status'] = 'success'
+                        result['data'] = '保存成功'
+        else:
+            print '校验失败：',obj.errors
+            result['data'] = '数据校验失败'
+    else:
+        result['data'] = '请求方式错误'
+    print result
+    return JsonResponse(result)
 
 
 def login(request):
@@ -136,15 +183,16 @@ def login(request):
             try:
                 user = CMDBUser.objects.get(username=username)
             except:
-                return HttpResponseRedirect('/login/')
+                #重定向到url别名login
+                return redirect('login')
             else:
                 if user.password == getmd5(password):
-                    response = HttpResponseRedirect('/')
+                    response = redirect('index')
                     response.set_cookie('id',user.id)
                     request.session['isLogin'] = True
                     return response
                 else:
-                    return HttpResponseRedirect('/login/')
+                    return redirect('login')
         else:
-            return HttpResponseRedirect('/login/')
-    return HttpResponseRedirect('/login/')
+            return redirect('login')
+    return redirect(login)

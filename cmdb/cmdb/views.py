@@ -1,6 +1,6 @@
 #coding:utf-8
 import random
-from django.shortcuts import render, HttpResponseRedirect
+from django.shortcuts import render, redirect
 from django.db import connection
 
 content = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890abcdefghijklmnopqrstuvwxyz'
@@ -19,7 +19,13 @@ def login(request):
     response.set_cookie('token',v_data)
     return response
 
-def getpage(sql, page, num = 3, maxpage_num = 7):
+def logout(request):
+    isLogin = request.session.get('isLogin',False)
+    if isLogin:
+        request.session.flush()
+    return redirect('login')
+
+def getpage(sql, page, num = 10, maxpage_num = 7):
     '''
     查询数据库数据
     :param sql: 每次查询的语句
@@ -79,9 +85,22 @@ def loginValid(fun):
     :return:
     '''
     def inner(request, *args, **kwargs):
-        is_login = request.COOKIES.get('isLogin')
-        if is_login:
+        isLogin = request.session.get('isLogin',False)
+        # 根据浏览器cookie里存储的sessionid在session表里查看登录状态
+        if isLogin:
             return fun(request, *args, **kwargs)
         else:
-            return HttpResponseRedirect('/login')
+            return redirect(login)
     return inner
+
+from User.models import CMDBUser
+from django.http import JsonResponse
+def test(request):
+    result = {'status':'error','data':'error'}
+    phone = '12792554543'
+    id = 14
+    user = CMDBUser.objects.filter(phone = phone).exclude(id = id)
+    if len(user) > 0:
+        result['status'] = 'success'
+        result['data'] = user[0].username
+    return JsonResponse(result)
