@@ -221,7 +221,6 @@
     <script>
         function usersetting() {
             var sendData = new FormData();
-            sendData.append('id',$('#id_id').val());
             sendData.append('email',$('#id_email').val());
             sendData.append('phone',$('#id_phone').val());
             sendData.append('photo',$('#id_photo')[0].files[0]);
@@ -251,7 +250,7 @@
                             type: "danger"
                         }).show();
                     }
-                    $(location).attr('href', '{% url 'index' %}');
+                    //$(location).attr('href', '{% url 'index' %}');
                 },
                 error:function (error) {
                     console.log(error);

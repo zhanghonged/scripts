@@ -15,11 +15,14 @@ def index(request):
     user = CMDBUser.objects.get(id = uid)
     return render(request,'index.html',{'user':user})
 
+@loginValid
 def user_list(request):
     '''
     :param request:
     :return: 用户管理页
     '''
+    uid = request.COOKIES.get('id')
+    user = CMDBUser.objects.get(id=uid)
     register = Register
     return render(request,'userlist.html',locals())
 
@@ -177,7 +180,7 @@ def login(request):
         password = request.POST.get('password')
         loginvalid = request.POST.get('loginvalid')
         token_cookie = request.COOKIES.get('token')
-
+        remember = request.POST.get('remember')
         # 判断前端页面的值与token_cookie的值是否相同，这是一种反爬手段
         if loginvalid == token_cookie:
             try:
@@ -190,6 +193,16 @@ def login(request):
                     response = redirect('index')
                     response.set_cookie('id',user.id)
                     request.session['isLogin'] = True
+
+                    # 记住密码写入cookie
+                    if remember == 'Remember-me':
+                        response.set_cookie('remUser',True,604800)
+                        response.set_cookie('username',username,604800)
+                        response.set_cookie('password',password,604800)
+                    else:
+                        response.delete_cookie('remUser')
+                        response.delete_cookie('username')
+                        response.delete_cookie('password')
                     return response
                 else:
                     return redirect('login')

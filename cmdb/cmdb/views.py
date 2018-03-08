@@ -4,8 +4,8 @@ from django.shortcuts import render, redirect
 from django.db import connection
 
 content = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890abcdefghijklmnopqrstuvwxyz'
-def base(request):
-    return render(request,'base.html',locals())
+# def base(request):
+#     return render(request,'base.html',locals())
 
 def login(request):
     '''
@@ -38,7 +38,7 @@ def getpage(sql, page, num = 10, maxpage_num = 7):
     num = int(num)
     start_page = (page-1) * num
     page_data_sql = sql + ' limit %s,%s'%(start_page,num)
-    print page_data_sql
+    #print page_data_sql
     cursor = connection.cursor() #实例化游标
     cursor.execute(page_data_sql)
     page_data = cursor.fetchall()
@@ -92,15 +92,3 @@ def loginValid(fun):
         else:
             return redirect(login)
     return inner
-
-from User.models import CMDBUser
-from django.http import JsonResponse
-def test(request):
-    result = {'status':'error','data':'error'}
-    phone = '12792554543'
-    id = 14
-    user = CMDBUser.objects.filter(phone = phone).exclude(id = id)
-    if len(user) > 0:
-        result['status'] = 'success'
-        result['data'] = user[0].username
-    return JsonResponse(result)
