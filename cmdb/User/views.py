@@ -194,7 +194,7 @@ def login(request):
                     response.set_cookie('id',user.id)
                     request.session['isLogin'] = True
 
-                    # 记住密码写入cookie
+                    # 记住密码写入cookie，设置有效期为7天
                     if remember == 'Remember-me':
                         response.set_cookie('remUser',True,604800)
                         response.set_cookie('username',username,604800)
