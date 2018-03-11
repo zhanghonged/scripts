@@ -208,4 +208,4 @@ def login(request):
                     return redirect('login')
         else:
             return redirect('login')
-    return redirect(login)
+    return redirect('login')

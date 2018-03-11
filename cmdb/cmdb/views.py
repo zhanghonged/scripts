@@ -90,5 +90,5 @@ def loginValid(fun):
         if isLogin:
             return fun(request, *args, **kwargs)
         else:
-            return redirect(login)
+            return redirect('login')
     return inner

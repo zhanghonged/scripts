@@ -1,7 +1,7 @@
 #coding:utf-8
 import time
 import paramiko
-from django.shortcuts import render
+from django.shortcuts import render,redirect
 from User.models import CMDBUser
 from django.http import JsonResponse
 from models import Equipment
@@ -139,3 +139,78 @@ def server_save(request):
             equipment.cpu = cpu
             equipment.save()
     return JsonResponse({'data':'some'})
+
+terminal_dict = {}
+def shell(request):
+    if request.method == 'GET':
+        id = request.GET.get('id')
+        if id:
+            equipment = Equipment.objects.get(id=int(id))
+            ip = equipment.ip
+            port = int(equipment.port)
+            username = equipment.username
+            passwoprd = equipment.password
+            if ip and port and username and passwoprd:
+
+                try:
+                    result = {'status':'success','ip':ip}
+                    trans = paramiko.Transport(sock=(ip,port))
+                    trans.connect(
+                        username = username,
+                        password = passwoprd
+                    )
+                    ssh = paramiko.SSHClient()
+                    ssh._transport = trans
+                    terminal = ssh.invoke_shell()
+                    terminal.settimeout(2)
+                    terminal.send('\n')
+                    login_data = ''
+                    while True:
+                        try:
+                            recv = terminal.recv(9999)
+                            if recv:
+                                login_data += recv
+                            else:
+                                continue
+                        except:
+                            break
+                    result['data'] = login_data.replace('\r\n','<br>')
+                    terminal_dict[ip] =terminal
+                    response = render(request, 'shell.html', locals())
+                    response.set_cookie('ip',ip)
+                    return response
+                except Exception as e:
+                    print e
+                    return redirect('server_list')
+
+def command(request):
+    ip = request.COOKIES.get('ip')
+    if ip:
+        if request.method == 'GET':
+            cmd = request.GET.get('command')
+            if cmd:
+                terminal = terminal_dict[ip]
+                terminal.send(cmd+'\n')
+                login_data = ''
+                while True:
+                    try:
+                        recv = terminal.recv(9999)
+                        if recv:
+                            line_list = recv.split('\r\n')
+                            result_list = []
+                            for line in line_list:
+                                l = line.replace(u'\u001B','').replace('[01;34m','').replace('[01;32m','').replace('[0m','')
+                                result_list.append(l)
+                            login_data = '<br>'.join(result_list)
+                        else:
+                            continue
+                    except:
+                        break
+                result = {'result':login_data}
+                return JsonResponse(result)
+            else:
+                return redirect('server_list')
+        else:
+            return redirect('server_list')
+    else:
+        return redirect('server_list')

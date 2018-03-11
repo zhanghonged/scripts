@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>shell</title>
+    <script src="{% static 'jquery/jquery-1.10.1.js' %}"></script>
+    <script>
+        $(function () {
+            $('#commit').click(
+                function () {
+                    var command = $('#command').val();
+                    $('#command').val('');
+                    if(command){
+                        $.ajax(
+                            {
+                                url:'{% url 'cmd' %}' + '?command=' + command,
+                                type:'get',
+                                data:command,
+                                success:function (data) {
+                                    var reslut = data['result'];
+                                    $('#result').append(
+                                        '<p>' + reslut + '</p>'
+                                    );
+                                },
+                                error:function (error) {
+                                    console.log(error)
+                                }
+                            }
+                        )
+                    }else{
+                        alert('command not be null');
+                    }
+                }
+            )
+        })
+    </script>
+</head>
+<body>
+    <input id="command" type="text" name="command">
+    <button id="commit">commit</button>
+
+    <div id="result" style="background: black;color: white">
+        {{ result.data | safe }}
+    </div>
+
+</body>
+</html>
