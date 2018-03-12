@@ -171,6 +171,7 @@
                         <th>CPU</th>
                         <th>内存</th>
                         <th>MAC</th>
+                        <th>操作</th>
                     </tr>
                     </thead>
                     <tbody>
@@ -184,6 +185,13 @@
                         <td>{{ server.cpu }}</td>
                         <td>{{ server.memory }}</td>
                         <td>{{ server.mac }}</td>
+                        <td>
+                            <button class="btn btn-success btn-group-justified">
+                                <a v-bind:href="'/eq/shell?id=' + server.id" target="_blank">
+                                    远程命令
+                                </a>
+                            </button>
+                        </td>
                     </tr>
                     </tbody>
                 </table>
