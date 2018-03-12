@@ -1,0 +1,58 @@
+{% load staticfiles %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Gateone</title>
+    <script src="{% static 'jquery/jquery-1.10.1.js' %}"></script>
+    <script src="{% static 'gateone/gateone.js' %}"></script>
+    <script>
+        $(function () {
+            var ssh_url = 'ssh://root@192.168.1.4:22';
+            $.ajax(
+                {
+                    url:'{% url 'get_auth' %}',
+                    type:'get',
+                    dataType:'json',
+                    success:function (data) {
+                        console.log(data.auth);
+                        console.log(data.url);
+                        var auth_message = data.auth;
+                        var auth_url = data.url;
+                        GateOne.init({
+                            auth: auth_message,
+                            url: auth_url,
+                            // theme:'solarized',
+                            goDiv: '#gateone',
+                            // disableTermTransitions:'true',
+                            autoConnectURL: ssh_url
+                        });
+                    },
+                    error:function (error) {
+                        console.log(error);
+                    }
+                }
+            );
+            GateOne.Base.superSandbox("GateOne.SomePlugin", ["GateOne", "GateOne.Net", "GateOne.Terminal.Input", "GateOne.Terminal"], function (window, undefined) {
+            var location = '192.168.1.4';
+            GateOne.prefs.autoConnectURL = ssh_url;
+            GateOne.prefs.fontSize = "100%";
+            GateOne.prefs.scrollback = 10000;  // scrollback buffer up to 10,000 lines
+            GateOne.Terminal.loadFont("Source Code Pro", "100%");
+            //GateOne.locations; // Holds the state of all current known/open locations
+            GateOne.Net.setLocation(location);
+            <!--记录登录状态-->
+            });
+
+        })
+    </script>
+
+</head>
+
+
+<body>
+<div id="gateone_container" style="position: relative; width: 100%; height: 100%;">
+    <div id="gateone"></div>
+</div>
+<div id="gateone"></div>
+</body>
+</html>
