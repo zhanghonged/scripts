@@ -49,6 +49,27 @@ def server_list_data(request):
         }
     return JsonResponse(result)
 
+def connect_server(ip,port,user,password):
+    '''
+    通过paramiko检测服务器是否可以连通，是的话返回连接对象
+    :param ip:
+    :param port:
+    :param user:
+    :param password:
+    :return:返回连接对象
+    '''
+    result = {'status':'error','data':''}
+    try:
+        trans = paramiko.Transport(ip,port)
+        trans.connect(username = user, password = password)
+    except Exception as e:
+        result['data'] = str(e)
+    else:
+        result['status'] = 'success'
+        result['data'] = trans
+    finally:
+        return result
+
 def server_add(request):
     '''
     服务器添加方法，根据ip、port、username、password对服务器操作：远程登录、脚本上传、脚本远程执行
@@ -71,40 +92,38 @@ def server_add(request):
             equipment.password = password
             equipment.save()
             #连接远程虚拟机
-            try:
-                trans = paramiko.Transport(ip,port)
-                trans.connect(username=username,password=password)
-
-                sftp = paramiko.SFTPClient.from_transport(trans) #用于文件上传和下载的sftp服务
+            connect = connect_server(ip,port,username,password)
+            if connect['status'] == 'success':
+                trans = connect['data']
+                # 用于文件上传和下载的sftp服务
                 sftp = paramiko.SFTPClient.from_transport(trans)
-                ssh = paramiko.SSHClient() #远程执行命令的服务
+                # 远程执行命令服务
+                ssh = paramiko.SSHClient()
                 ssh._transport = trans
-                #创建目录
+                # 创建目录
                 stdin,stdout,stderr = ssh.exec_command('mkdir CMDBClient')
                 time.sleep(1)
-                #上传文件
+                # 上传文件
                 sftp.put('sftpDir/getData.py','CMDBClient/getData.py')
                 sftp.put('sftpDir/sendData.py', 'CMDBClient/sendData.py')
                 sftp.put('sftpDir/main.py', 'CMDBClient/main.py')
-                #调用脚本
-                stdin,stdout,stderr = ssh.exec_command('python /root/CMDBClient/main.py')
+                # 调用脚本
+                stdin,stdout,stderr = ssh.exec_command('python CMDBClient/main.py')
                 trans.close()
-            except Exception as e:
-                print e
+                # 连接成功状态记录到数据库
+                equipment = Equipment.objects.get(ip=ip)
+                equipment.status = 'True'
+                equipment.save()
+            else:
+                result['data'] = connect['data']
+                # 连接失败状态记录到数据库
                 equipment = Equipment.objects.get(ip = ip)
                 equipment.status = 'False'
-                result['data'] = '连接服务器失败'
-            else:
-                equipment = Equipment.objects.get(ip = ip)
-                equipment.status = 'True'
-                result['status'] = 'success'
-                result['data'] = '添加成功'
-            finally:
                 equipment.save()
         else:
-            result['data'] = '添加失败'
+            result['data'] = 'ip and port and username and password not be null'
     else:
-        result['data'] = '添加失败'
+        result['data'] = 'your request must be post'
     return JsonResponse(result)
 
 # 由于客户端调用此接口，去掉csff验证
@@ -115,6 +134,7 @@ def server_save(request):
     :param request:
     :return:
     '''
+    result = {'status':'error','data':''}
     ip = request.META['REMOTE_ADDR']
     if request.method == 'POST':
         hostname = request.POST.get('get_hostname')
@@ -123,13 +143,13 @@ def server_save(request):
         sys_type = request.POST.get('get_systeType')
         memory = request.POST.get('get_memory')
         cpu = request.POST.get('get_cpu')
+        disk = request.POST.get('get_disk')
 
-
-        print ip, type(ip)
         try:
             equipment = Equipment.objects.get(ip=ip)
         except Exception ,e:
             print e
+            result['data'] = str(e)
         else:
             equipment.hostname = hostname
             equipment.sys_version = sys_version
@@ -137,8 +157,13 @@ def server_save(request):
             equipment.sys_type = sys_type
             equipment.memory = memory
             equipment.cpu = cpu
+            equipment.disk = disk
             equipment.save()
-    return JsonResponse({'data':'some'})
+            result["statue"] = "success"
+            result["data"] = "your data is saved"
+    else:
+        result['data'] = 'request must be post'
+    return JsonResponse(result)
 
 terminal_dict = {}
 def shell(request):

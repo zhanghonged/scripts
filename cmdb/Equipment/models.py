@@ -18,4 +18,9 @@ class Equipment(models.Model):
 
     def __unicode__(self):
         return self.hostname
+
+class ApiToken(models.Model):
+    value = models.CharField(max_length=32,verbose_name='值')
+    types = models.CharField(max_length=32,verbose_name='token类型')
+    time = models.DateTimeField(verbose_name='注册时间')
 # Create your models here.
