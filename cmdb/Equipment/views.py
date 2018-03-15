@@ -165,77 +165,26 @@ def server_save(request):
         result['data'] = 'request must be post'
     return JsonResponse(result)
 
-terminal_dict = {}
-def shell(request):
-    if request.method == 'GET':
-        id = request.GET.get('id')
-        if id:
-            equipment = Equipment.objects.get(id=int(id))
-            ip = equipment.ip
-            port = int(equipment.port)
-            username = equipment.username
-            passwoprd = equipment.password
-            if ip and port and username and passwoprd:
+def gateone(request):
+    return render(request,'gateone.html')
 
-                try:
-                    result = {'status':'success','ip':ip}
-                    trans = paramiko.Transport(sock=(ip,port))
-                    trans.connect(
-                        username = username,
-                        password = passwoprd
-                    )
-                    ssh = paramiko.SSHClient()
-                    ssh._transport = trans
-                    terminal = ssh.invoke_shell()
-                    terminal.settimeout(2)
-                    terminal.send('\n')
-                    login_data = ''
-                    while True:
-                        try:
-                            recv = terminal.recv(9999)
-                            if recv:
-                                login_data += recv
-                            else:
-                                continue
-                        except:
-                            break
-                    result['data'] = login_data.replace('\r\n','<br>')
-                    terminal_dict[ip] =terminal
-                    response = render(request, 'shell.html', locals())
-                    response.set_cookie('ip',ip)
-                    return response
-                except Exception as e:
-                    print e
-                    return redirect('server_list')
+def create_signature(secret,*parts):
+    import hmac ,hashlib
+    hash = hmac.new(secret, digestmod=hashlib.sha1)
+    for part in parts:
+        hash.update(str(part))
+    return hash.hexdigest()
 
-def command(request):
-    ip = request.COOKIES.get('ip')
-    if ip:
-        if request.method == 'GET':
-            cmd = request.GET.get('command')
-            if cmd:
-                terminal = terminal_dict[ip]
-                terminal.send(cmd+'\n')
-                login_data = ''
-                while True:
-                    try:
-                        recv = terminal.recv(9999)
-                        if recv:
-                            line_list = recv.split('\r\n')
-                            result_list = []
-                            for line in line_list:
-                                l = line.replace(u'\u001B','').replace('[01;34m','').replace('[01;32m','').replace('[0m','')
-                                result_list.append(l)
-                            login_data = '<br>'.join(result_list)
-                        else:
-                            continue
-                    except:
-                        break
-                result = {'result':login_data}
-                return JsonResponse(result)
-            else:
-                return redirect('server_list')
-        else:
-            return redirect('server_list')
-    else:
-        return redirect('server_list')
+def get_auth_obj(request):
+    gateone_server = 'http://192.168.1.5:8811'
+    secret = 'secret'
+    authobj = {
+        'api_key':'YjQ3NjMyZjEyZTRjNDE5YzkwNWFlMGZiZDYwODI0YjUyY',
+        'upn':'zhanghong',
+        'timestamp':str(int(time.time() * 1000)),
+        'signature_method':'HMAC-SHA1',
+        'api_version':'1,0'
+    }
+    authobj['signature'] = create_signature(secret,authobj['api_key'],authobj['upn'],authobj['timestamp'])
+    auth_info_and_server = {'url':gateone_server,'auth':authobj}
+    return JsonResponse(auth_info_and_server)

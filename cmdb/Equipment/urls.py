@@ -7,6 +7,6 @@ urlpatterns = [
     url(r'^server_list_data', server_list_data, name='server_list_data'),
     url(r'^server_add', server_add, name='server_add'),
     url(r'^server_save', server_save, name='server_save'),
-    url(r'^shell/', shell, name='shell'),
-    url(r'cmd', command, name='cmd'),
+    url(r'^gateone', gateone, name='gateone'),
+    url(r'^get_auth_obj',get_auth_obj, name='get_auth_obj'),
 ]
