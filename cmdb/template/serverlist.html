@@ -17,7 +17,7 @@
             dict[this.name] = this.value;
         });
         dict['csrfmiddlewaretoken'] = '{{ csrf_token }}';
-        console.log(dict);
+        //console.log(dict);
         $.ajax({
             url: "{% url 'server_add' %}",
             type: 'post',
@@ -53,7 +53,7 @@
                     var url = '/eq/server_list_data/?page=1';
                     this.$http.get(url).then(
                         function (data) {
-                            console.log(data);
+                            //console.log(data);
                             var Data = data.data;
                             this.server_data = Data.page_data;
                             this.server_range = Data.page_range;

@@ -4,7 +4,7 @@ import paramiko
 from django.shortcuts import render,redirect
 from User.models import CMDBUser
 from django.http import JsonResponse
-from models import Equipment
+from models import Equipment,Pc
 from cmdb.views import getpage
 from django.views.decorators.csrf import csrf_exempt
 
@@ -165,6 +165,85 @@ def server_save(request):
         result['data'] = 'request must be post'
     return JsonResponse(result)
 
+def pc_list(request):
+    deparment = ['宙合','译喵','财务']
+    return render(request,'pclist.html',locals())
+
+def pc_list_data(request):
+    '''
+    查询数据库数据以json格式返回
+    :param request:
+    :return:
+    '''
+    if request.method == 'GET':
+        page = request.GET.get('page')
+        num = request.GET.get('num')
+        sql = 'select * from Equipment_pc'
+        if page and num:
+            result = getpage(sql,page,num)
+        elif page:
+            result = getpage(sql,page)
+        else:
+            result = {
+                'page_data': '',
+                'page_range': '',
+                'current_page': '',
+                'max_page': ''
+            }
+    else:
+        result = {
+            'page_data': '',
+            'page_range': '',
+            'current_page': '',
+            'max_page': ''
+        }
+    return JsonResponse(result)
+
+def pc_add(request):
+    '''
+    添加个人pc
+    :param request:
+    :return:
+    '''
+    result = {'status':'error','data':''}
+    if request.method == 'POST':
+        print request.POST
+        user = request.POST.get('user')
+        ip = request.POST.get('ip')
+        mac = request.POST.get('mac')
+        cpu = request.POST.get('cpu')
+        disk = request.POST.get('disk')
+        memory = request.POST.get('memory')
+        display = request.POST.get('display')
+        department = request.POST.get('department')
+        note = request.POST.get('note')
+        if ip and user:
+            try:
+                # 检测此ip是否已经存在
+                pc = Pc.objects.get(ip = ip)
+            except:
+                # 不存在入库
+                Pc.objects.create(
+                    user = user,
+                    ip = ip,
+                    mac = mac,
+                    cpu = cpu,
+                    disk = disk,
+                    memory = memory,
+                    display = display,
+                    department = department,
+                    note = note
+                )
+                result['status'] = 'success'
+                result['data'] = '添加成功'
+            else:
+                result['data'] = 'IP已存在'
+        else:
+            result['data'] = '使用者和IP不能为空'
+    else:
+        result['data'] = '必须是POST请求'
+    return JsonResponse(result)
+
 def gateone(request):
     return render(request,'gateone.html')
 
@@ -188,3 +267,31 @@ def get_auth_obj(request):
     authobj['signature'] = create_signature(secret,authobj['api_key'],authobj['upn'],authobj['timestamp'])
     auth_info_and_server = {'url':gateone_server,'auth':authobj}
     return JsonResponse(auth_info_and_server)
+
+def get_mac():
+    import random
+    temp = '1234567890ABCDEF'
+    a=''
+    for i in range(6):
+       a+=''.join(random.sample(temp,2))
+    mac = ':'.join(a[e:e+2] for e in range(0,11,2))
+    return mac
+
+def linshi(request):
+    import random
+    names = ['张玉宁','于汉超','郜林','范志毅','曾诚','郝海东','李金玉','江洪']
+    cpus = ['i5-3450 CPU @ 3.10GHz','i5-3450 CPU @ 3.10GHz','inter-core 2.7','AMD@3.8速龙']
+    memorys = ['1GB','2GB','3GB','4GB','8GB','16GB','32GB','64GB']
+    departments = ['宙合', '译喵', '财务']
+    for i in xrange(100):
+        Pc.objects.create(
+            user=random.choice(names)+str(i),
+            ip='192.168.100.%s'%i,
+            mac = get_mac(),
+            cpu = random.choice(cpus),
+            memory = random.choice(memorys),
+            disk = '',
+            department = random.choice(departments),
+            note = ''
+        )
+    return JsonResponse({'status':'success'})
