@@ -29,9 +29,6 @@
                 }
             })
         }
-        function edit_data(id) {
-
-        }
 
         $(function () {
             $('#pcsubmit').click(function () {
@@ -41,6 +38,11 @@
             // 数据展示部分，下面是使用vue展示分页数据
             // 请求方式为vue-ajax请求
             Vue.use(VueResource); //这里在强调我们用vue-resource.js代替vue.js
+
+            // 设置 POST 请求时 的 data 格式
+            Vue.http.options.emulateJSON = true;
+
+
             new Vue(
                 {
                     el: '#mypc',
@@ -48,7 +50,10 @@
                         pc_data: '',
                         pc_range: '',
                         pc_current: null,
-                        pc_maxpage: null
+                        pc_maxpage: null,
+                        pc_edit:{},
+                        pc_del_id:'',
+                        pc_del_user:''
                     },
                     created: function () {
                         var url = '/eq/pc_list_data/?page=1';
@@ -81,6 +86,60 @@
                                     console.log(response)
                                 }
                             );
+                        },
+                        //vue ajax get 请求，用于从后台获取当前pc的值
+                        pcedit:function (id) {
+                            var url = '/eq/pc_edit/?pid=' + id;
+                            this.$http.get(url).then(
+                                //请求成功
+                                function (data) {
+                                    //console.log(data);
+                                    this.pc_edit = data.data.data
+                                },
+                                //请求失败
+                                function (response) {
+                                    console.log(response);
+                                }
+                            )
+                        },
+                        //vue ajax post请求，用于post提交修改pc信息
+                        pcedit_save:function (id) {
+                            //通过vue数据双向绑定获取修改pc表单的值
+                            var data = this.pc_edit;
+                            data['pid'] = id;
+                            console.log(data);
+                            var url = '/eq/pc_edit/';
+                            this.$http.post(url,data).then(
+                                //请求成功
+                                function (data) {
+                                    console.log(data);
+                                    $(location).attr('href', '{% url 'pc_list' %}');
+                                },
+                                //请求失败
+                                function (response) {
+                                    console.log(response);
+                                }
+                            )
+                        },
+                        //vue ajax get 请求，用于从后台获取当前pc的id
+                        pcdel:function (id,user) {
+                            this.pc_del_id = id;
+                            this.pc_del_user = user;
+                        },
+                        //vue ajax get 请求，用于删除pc
+                        pcdel_save:function (id) {
+                            var url = '/eq/pc_del/?pid=' + id;
+                            this.$http.get(url).then(
+                                //请求成功
+                                function (data) {
+                                    console.log(data);
+                                    $(location).attr('href', '{% url 'pc_list' %}');
+                                },
+                                //请求失败
+                                function (response) {
+                                    console.log(response);
+                                }
+                            )
                         }
                     }
                 }
@@ -109,7 +168,7 @@
                         </span>
                     </div>
             </div>
-            <!--模态框开始-->
+            <!--模态框开始，新增PC的模态框-->
             <button type="button" class="btn btn-primary btn-lg" data-toggle="modal"
                     data-target="#addPc">
                 添加PC
@@ -234,12 +293,116 @@
                         <td>{{ pc.department }}</td>
                         <td>{{ pc.note }}</td>
                         <td>
-                            <a class="btn btn-success" href="" type="button" data-toggle="modal" data-target="#addPc">编辑</a>
-                            <a class="btn btn-danger" href="" type="button">删除</a>
+                            <a class="btn btn-success"  type="button" v-on:click="pcedit(pc.id)" data-toggle="modal" data-target="#editPc">编辑</a>
+                            <a class="btn btn-danger" type="button" v-on:click="pcdel(pc.id,pc.user)" data-toggle="modal" data-target="#myModal">删除</a>
                         </td>
                     </tr>
                     </tbody>
                 </table>
+                <!--编辑模态框开始，修改PC信息的模态框-->
+                <div class="modal fade" id="editPc" tabindex="-1" role="dialog" aria-labelledby="editPc">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header pannel-heading">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                                &times;
+                            </button>
+                            <h4 class="modal-title" id="editPcTitle">编辑PC</h4>
+                        </div>
+                        <div class="panel-body">
+                            <div class="modal-body">
+                                <form id="editPcForm" class="form-horizontal">
+                                    <div class="form-group">
+                                        <label for="ip" class="control-label col-sm-2">使用者</label>
+                                        <div class="col-sm-10">
+                                            <input class="form-control" type="text" name="user" id="e-user" v-model="pc_edit.user">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="ip" class="control-label col-sm-2">IP地址</label>
+                                        <div class="col-sm-10">
+                                            <input class="form-control" type="text" name="ip" id="e-ip" v-model="pc_edit.ip">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="port" class="control-label col-sm-2">MAC地址</label>
+                                        <div class="col-sm-10">
+                                            <input class="form-control" type="text" name="mac" id="e-mac" v-model="pc_edit.mac">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="username" class="control-label col-sm-2">CPU</label>
+                                        <div class="col-sm-10">
+                                            <input class="form-control" type="text" name="cpu" id="e-cpu" v-model="pc_edit.cpu">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="password" class="control-label col-sm-2">内存</label>
+                                        <div class="col-sm-10">
+                                            <input class="form-control" type="text" name="memory" id="e-memory" v-model="pc_edit.memory">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="password" class="control-label col-sm-2">硬盘</label>
+                                        <div class="col-sm-10">
+                                            <input class="form-control" type="text" name="disk" id="e-disk" v-model="pc_edit.disk">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="password" class="control-label col-sm-2">显示器</label>
+                                        <div class="col-sm-10">
+                                            <input class="form-control" type="text" name="display" id="e-display" v-model="pc_edit.display">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="password" class="control-label col-sm-2">部门</label>
+                                        <div class="col-sm-10">
+                                            <select class="form-control" name="department" id="e-department" v-model="pc_edit.department">
+                                                <option  v-for="d in pc_edit.deparments" v-bind:value="d">{{ d }}</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="password" class="control-label col-sm-2">备注</label>
+                                        <div class="col-sm-10">
+                                            <input class="form-control" type="text" name="note" id="e-note" v-model="pc_edit.note">
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                            <button v-on:click="pcedit_save(pc_edit.id)" id="PcEditSubmit" class="btn btn-success" data-dismiss="modal">
+                                提交
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                <!--编辑模态框结束-->
+
+                <!--删除模态框开始，确认是否删除-->
+                <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+                     aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;
+                                </button>
+                                <h4 class="modal-title" id="myModalLabel">请确定是否要删除  <span style="color:red;">{{ pc_del_user }}</span></h4>
+                            </div>
+                            <div class="modal-body">
+                                <button type="button" class="btn btn-primary" v-on:click="pcdel_save(pc_del_id)" data-dismiss="modal">确认</button>
+                                <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+                            </div>
+                        </div>
+                        <!-- /.modal-content -->
+                    </div>
+                    <!-- /.modal-dialog -->
+                </div>
+                <!--删除模态框结束-->
+
                 <nav aria-label="Page navigation">
                     <ul class="pagination">
                         <li v-if="pc_current == 1" class="disabled">

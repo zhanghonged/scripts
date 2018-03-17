@@ -244,6 +244,89 @@ def pc_add(request):
         result['data'] = '必须是POST请求'
     return JsonResponse(result)
 
+@csrf_exempt
+def pc_edit(request):
+    result = {'status':'error','data':{},'message':''}
+    # 如果是get请求，返回当前pc的数据，用于vue前台默认展示
+    if request.method == 'GET':
+        pid = request.GET.get('pid')
+        if pid:
+            try:
+                pc = Pc.objects.get(id=pid)
+            except Exception as e:
+                print e
+            else:
+                result['data']['deparments'] = ['宙合', '译喵', '财务']
+                result['data']['id'] = pc.id
+                result['data']['user'] = pc.user
+                result['data']['ip'] = pc.ip
+                result['data']['mac'] = pc.mac
+                result['data']['cpu'] = pc.cpu
+                result['data']['disk'] = pc.disk
+                result['data']['memory'] = pc.memory
+                result['data']['display'] = pc.display
+                result['data']['department'] = pc.department
+                result['data']['note'] = pc.note
+                result['status'] = 'success'
+            #return JsonResponse(result)
+        else:
+            result['message'] = 'error'
+    # 如果是post请求，则为修改数据
+    elif request.method == 'POST':
+        pid = request.POST.get('pid')
+        user = request.POST.get('user')
+        ip = request.POST.get('ip')
+        mac = request.POST.get('mac')
+        cpu = request.POST.get('cpu')
+        disk = request.POST.get('disk')
+        memory = request.POST.get('memory')
+        display = request.POST.get('display')
+        department = request.POST.get('department')
+        note = request.POST.get('note')
+        if pid:
+            try:
+                pc = Pc.objects.get(id = pid)
+            except Exception as e:
+                print e
+            else:
+                # 判断除此用户外，ip是否已存在
+                pc_list = Pc.objects.filter(ip = ip).exclude(id=pid)
+                # 如果pc_list长度大于0，说明此ip已存在
+                if len(pc_list) > 0:
+                    result['message'] = 'IP已存在，请确认'
+                else:
+                    pc.user=user
+                    pc.ip=ip
+                    pc.mac=mac
+                    pc.cpu=cpu
+                    pc.disk=disk
+                    pc.memory=memory
+                    pc.display=display
+                    pc.department=department
+                    pc.note=note
+                    pc.save()
+                    result['status'] = 'success'
+                    result['message'] = '修改成功'
+        else:
+            result['message'] = '修改失败，请联系管理员'
+    return JsonResponse(result)
+
+def pc_del(request):
+    result = {'status':'error','data':''}
+    if request.method == 'GET':
+        pid = request.GET.get('pid')
+        if pid:
+            try:
+                Pc.objects.get(id = pid).delete()
+            except Exception as e:
+                result['data'] = str(e)
+            else:
+                result['status'] = 'success'
+                result['data'] = '删除成功'
+        else:
+            result['data'] = '设备ID不存在'
+    return JsonResponse(result)
+
 def gateone(request):
     return render(request,'gateone.html')
 
