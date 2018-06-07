@@ -1,16 +1,21 @@
 #!/usr/bin/python
 # coding:utf-8
 
-import getData
-from sendData import sendData
+from getData import GetData
+from sendData import Sender
 
-method_list = dir(getData)
-method_dict = getData.__dict__  # 以字典形式，对象的方法名称作为键，属性本身作为值
-result_dict = {}
-for method in method_list:
-    if method.startswith('get'):
-        result_dict[method] = method_dict[method]()
 
-if __name__ == '__main__':
-    print result_dict
-    sendData(result_dict)
+# url地址
+url = 'http://192.168.1.222:8001/eq/server_save'
+
+#采集数据
+mydata = GetData()
+sendData = mydata.getData()
+
+# 发送数据
+sender = Sender(url,sendData)
+sender.get_request()
+response = sender.get_response()
+
+# 获取响应
+print response

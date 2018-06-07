@@ -25,7 +25,7 @@ def logout(request):
         request.session.flush()
     return redirect('login')
 
-def getpage(sql, page, num = 10, maxpage_num = 7):
+def getpage(sql, page, num = 12, maxpage_num = 7):
     '''
     查询数据库数据
     :param sql: 每次查询的语句

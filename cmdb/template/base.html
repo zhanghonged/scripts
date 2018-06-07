@@ -59,7 +59,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="{% url 'index' %}">宙合CMDB v1.0</a>
+                <a class="navbar-brand" href="{% url 'index' %}">宙合运维平台 v1.0</a>
             </div>
             <!-- /.navbar-header -->
 
@@ -104,7 +104,7 @@
                                     <a href="{% url 'server_list' %}">服务器</a>
                                 </li>
                                 <li>
-                                    <a href="#">个人PC</a>
+                                    <a href="{% url 'pc_list' %}">办公PC</a>
                                 </li>
                             </ul>
                             <!-- /.nav-second-level -->
@@ -216,6 +216,7 @@
     <!-- bootstrap-notify JavaScript -->
     <script src="{% static 'bootstrap-notify/js/bootstrap-notify.js' %}"></script>
 
+    <!-- vue JavaScript -->
     <script src="{% static 'vue/vue.min.js' %}"></script>
     <script src="{% static 'vue/vue-resource.js' %}"></script>
     <script>
