@@ -78,7 +78,7 @@ $(function () {
                                 return $('#username').val();
                             }
                             //下面这种方式只适合js写在html页面中的情况
-                            // csrfmiddlewaretoken:'{{ csrf_token }}'
+                            csrfmiddlewaretoken:'{{ csrf_token }}'
                         },
                         delay: 1000,  //每输入一个字符，就发ajax请求，服务器压力还是太大，设置1秒发送一次ajax（默认输入一个字符，提交一次，服务器压力太大）
                         message: '用户名已存在'
