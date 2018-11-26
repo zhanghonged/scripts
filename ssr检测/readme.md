@@ -1,6 +1,9 @@
 此脚本适用于py2.7
+
 1、需要调用 Shadowsocksr客户端，github地址：https://github.com/ToyoDAdoubiBackup/shadowsocksr.git
+
 2、ssr_check.conf 文件里写入 ssr://xxxx 或 ss://格式的账号信息
+
 3、检测完成后会生成日期命名的log，如下:
 
 =====开始记录测试信息 2018-11-26 16:13:50=====
