@@ -82,16 +82,8 @@ def makeConfig(d):
         return "ssr://"+config_file_base64.decode('utf8').strip('=')
 
 if __name__ == "__main__":
-    test = "ss://cmM0LW1kNTpoR2RMWGhiQUA0Ny44OS4yMjUuMTI2OjMwMDMz"
-    test1 = "ssr://MTc2LjEyMi4xMzIuMTIwOjIzMzM6YXV0aF9hZXMxMjhfbWQ1OmFlcy0xMjgtY3RyOnRsczEuMl90aWNrZXRfYXV0aDpjR0Z6YzNkdmNtUXgvP29iZnNwYXJhbT0mcHJvdG9wYXJhbT0mcmVtYXJrcz0mZ3JvdXA9JnVkcHBvcnQ9MCZ1b3Q9MA"
-    test2 = "ssr://MTc2LjEyMi4xMzIuMTIwOjIzMzQ6YXV0aF9hZXMxMjhfbWQ1OmFlcy0xMjgtY3RyOnRsczEuMl90aWNrZXRfZmFzdGF1dGg6Y0dGemMzZHZjbVF5Lz9vYmZzcGFyYW09JnByb3RvcGFyYW09JnJlbWFya3M9Jmdyb3VwPSZ1ZHBwb3J0PTAmdW90PTA"
-    print(getConfig(test))
+    test1 = "ssr://MS4yLjMuNDoyMzMzOmF1dGhfYWVzMTI4X21kNTphZXMtMTI4LWN0cjp0bHMxLjJfdGlja2V0X2F1dGg6Y0dGemMzZHZjbVF4Lz9vYmZzcGFyYW09JnByb3RvcGFyYW09JnJlbWFya3M9Jmdyb3VwPSZ1ZHBwb3J0PTAmdW90PTA"
     print(getConfig(test1))
-    print(getConfig(test2))
 
-    t = {'ip': '47.89.225.126', 'port': '30033', 'method': 'rc4-md5', 'passwd': 'hGdLXhbA', 'protocol': 'origin', 'obfs': 'plain', 'type': 'ss'}
-    t2 = {'ip': '176.122.132.120', 'port': '2333', 'method': 'aes-128-ctr', 'passwd': 'password1', 'protocol': 'auth_aes128_md5', 'obfs': 'tls1.2_ticket_auth', 'type': 'ssr'}
-    t3 = {'ip': '176.122.132.120', 'port': '2334', 'method': 'aes-128-ctr', 'passwd': 'password2', 'protocol': 'auth_aes128_md5', 'obfs': 'tls1.2_ticket_fastauth', 'type': 'ssr'}
-    print(makeConfig(t))
+    t2 = {'ip': '1.2.3.4', 'port': '2333', 'method': 'aes-128-ctr', 'passwd': 'password1', 'protocol': 'auth_aes128_md5', 'obfs': 'tls1.2_ticket_auth', 'type': 'ssr'}
     print(makeConfig(t2))
-    print(makeConfig(t3))
